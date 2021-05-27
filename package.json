@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-plugin-typescript": "^3.6.0",
     "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-source-strapi": "^1.0.1",
     "gatsby-transformer-sharp": "^3.4.0",
     "postcss": "^8.2.6",
     "prop-types": "^15.7.2",
