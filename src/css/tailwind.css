@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Cairo", sans-serif;
+  font-weight: regular;
+  src: url("../font/Cairo-Regular.woff2"), url("../font/Cairo-Regular.woff");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
