@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         sans: ["Cairo", "Helvetica", "Arial", "sans-serif"],
       },
+      colors: {
+        background: "#E6E6E6",
+        highlight: "#FF4D2F",
+      },
     },
   },
   variants: {
