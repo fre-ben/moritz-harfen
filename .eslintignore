@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.husky
+/public
+
+# testing
+/coverage
+
+
+# production
+/build
