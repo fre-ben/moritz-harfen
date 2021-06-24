@@ -31,7 +31,7 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
       onMouseLeave={() => setshowDropDown(!showDropDown)}
       className="inline"
     >
-      <p className="inline text-2xl mx-7">
+      <p className="inline text-xl mx-7">
         <Link to={link}>{text}</Link>
       </p>
       {showDropDown ? dropDownMenu : null}
