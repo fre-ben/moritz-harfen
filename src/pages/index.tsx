@@ -6,6 +6,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Navbar />
+      <h1>Hello World</h1>
     </Layout>
   );
 };
