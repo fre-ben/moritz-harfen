@@ -6,7 +6,7 @@ import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   return (
-    <div className="inline-flex items-center">
+    <nav className="inline-flex items-center self-start sticky top-10">
       <Logo size="4xl" mr="40" />
       <NavLinkDropdown text="harfen" link="/" />
       <NavLink text="leihharfen" link="/" />
@@ -15,7 +15,7 @@ const Navbar = () => {
       <NavLink text="vita" link="/" />
       <NavLink text="kontakt" link="/" />
       <LanguageSelector />
-    </div>
+    </nav>
   );
 };
 

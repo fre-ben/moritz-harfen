@@ -6,7 +6,11 @@ type NavbarProps = {
 };
 
 const Layout = ({ children }: NavbarProps) => {
-  return <div className="flex justify-center">{children}</div>;
+  return (
+    <div className="grid grid-flow-row justify-center items-center py-10 px-10 min-h-screen min-w-screen bg-background">
+      {children}
+    </div>
+  );
 };
 
 export default Layout;
