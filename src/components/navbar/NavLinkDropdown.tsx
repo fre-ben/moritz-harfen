@@ -12,14 +12,14 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
 
   //DropdownMenu Needs to get data from strapi?
   const dropDownMenu = (
-    <div className="absolute bg-background ml-7">
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100">
+    <div className="absolute bg-background md:ml-2 lg:ml-7">
+      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
         Fiona
       </p>
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100">
+      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
         Irwin
       </p>
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100">
+      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
         Test
       </p>
     </div>
@@ -31,7 +31,7 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
       onMouseLeave={() => setshowDropDown(!showDropDown)}
       className="inline"
     >
-      <p className="inline text-2xl mx-7">
+      <p className="inline text-xl md:mx-2 lg:mx-7">
         <Link to={link}>{text}</Link>
       </p>
       {showDropDown ? dropDownMenu : null}
