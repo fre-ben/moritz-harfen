@@ -8,7 +8,7 @@ type NavLinkProps = {
 
 const NavLink = ({ text, link }: NavLinkProps) => {
   return (
-    <p className="inline text-xl mx-7 border-b border-opacity-0 border-black hover:border-opacity-100">
+    <p className="inline text-xl md:mx-2 lg:mx-7 border-b border-opacity-0 border-black hover:border-opacity-100">
       <Link to={link}>{text}</Link>
     </p>
   );

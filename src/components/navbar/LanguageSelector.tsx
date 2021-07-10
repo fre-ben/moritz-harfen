@@ -1,11 +1,7 @@
 import * as React from "react";
 
 const LanguageSelector = () => {
-  return (
-    <div className="inline">
-      <p className="text-xl ml-16">de | en</p>
-    </div>
-  );
+  return <p className="text-l whitespace-nowrap md:ml-2 lg:ml-8">de | en</p>;
 };
 
 export default LanguageSelector;

@@ -8,7 +8,7 @@ type LogoProps = {
 
 const Logo = ({ size, mr }: LogoProps) => {
   return (
-    <h1 className={`text-${size} mx-2 mr-${mr}`}>
+    <h1 className={`text-${size} md:mx-4 lg:mx-7 mr-${mr} whitespace-nowrap`}>
       <Link to="/">moritz harfen</Link>
     </h1>
   );
