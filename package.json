@@ -27,11 +27,19 @@
     "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/builder-webpack5": "^6.3.4",
+    "@storybook/manager-webpack5": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "@types/node": "^15.6.1",
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.23.2",
@@ -59,7 +67,9 @@
     "prettify:all": "prettier --write .",
     "prepare": "husky install",
     "lint": "eslint .",
-    "test": "npm run stylelint && npm run prettify && npm run lint"
+    "test": "npm run stylelint && npm run prettify && npm run lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
