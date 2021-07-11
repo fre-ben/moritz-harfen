@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
@@ -11,6 +13,23 @@ module.exports = {
     config.module.rules[0].use[0].options.plugins.push(
       require.resolve("babel-plugin-remove-graphql-queries")
     );
+    // makes tailwind-css work with storybook
+    // https://stackoverflow.com/questions/65495912/storybook-tailwind-how-should-i-add-tailwind-to-storybook
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [
+        {
+          loader: "postcss-loader",
+          options: {
+            // HERE: OPTIONS
+            postcssOptions: {
+              plugins: [require("tailwindcss"), require("autoprefixer")],
+            },
+          },
+        },
+      ],
+      include: path.resolve(__dirname, "../"),
+    });
     return config;
   },
 };
