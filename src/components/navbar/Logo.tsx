@@ -11,7 +11,9 @@ const Logo = ({ size, mr }: LogoProps) => {
     <h1
       className={`text-${size} md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap`}
     >
-      <Link to="/">moritz harfen</Link>
+      <Link to="/" className={`text-${size}`}>
+        moritz harfen
+      </Link>
     </h1>
   );
 };
