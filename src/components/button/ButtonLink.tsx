@@ -9,10 +9,10 @@ export type ButtonLinkProps = {
 
 function ButtonLink({ destination, label, primary }: ButtonLinkProps) {
   const primaryStyle =
-    "border-4 border-highlight border-opacity-60 rounded-lg px-4 py-1 hover:border-opacity-100 transition ease-in-out duration-300";
+    "border-4 border-highlight border-opacity-60 rounded-lg px-4 py-1 hover:border-opacity-100 focus:border-opacity-100 transition ease-in-out duration-300";
 
   const secondaryStyle =
-    "border-4 border-black border-opacity-70 rounded-lg bg-black text-white bg-opacity-70 px-4 py-1 hover:bg-opacity-100 transition ease-in-out duration-300";
+    "border-4 border-black border-opacity-70 rounded-lg bg-black text-white bg-opacity-70 px-4 py-1 hover:bg-opacity-100 focus:bg-opacity-100 transition ease-in-out duration-300";
 
   return (
     <Link
