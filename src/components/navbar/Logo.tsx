@@ -8,11 +8,9 @@ type LogoProps = {
 
 const Logo = ({ size, mr }: LogoProps) => {
   return (
-    <h1
-      className={`text-${size} md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap`}
-    >
+    <p className={`text-${size} md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap`}>
       <Link to="/">moritz harfen</Link>
-    </h1>
+    </p>
   );
 };
 
