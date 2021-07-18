@@ -1,13 +1,13 @@
 import * as React from "react";
 import { ReactChild } from "react";
 
-type NavbarProps = {
-  children: ReactChild[];
+type LayoutProps = {
+  children: ReactChild[] | ReactChild;
 };
 
-const Layout = ({ children }: NavbarProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="grid grid-flow-row place-items-center py-10 px-10 min-h-screen min-w-screen bg-background">
+    <div className="grid auto-rows-min gap-y-12 place-items-center px-10 min-h-screen min-w-screen bg-background">
       {children}
     </div>
   );
