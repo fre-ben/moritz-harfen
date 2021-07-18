@@ -7,7 +7,7 @@ import LanguageSelector from "./LanguageSelector";
 const Navbar = () => {
   return (
     <nav className="inline-flex items-center sticky top-0 pt-10 z-50 bg-background w-full justify-center p-full">
-      <Logo size="4xl" mr="40" />
+      <Logo mr="40" />
       <NavLinkDropdown text="harfen" link="/" />
       <NavLink text="leihharfen" link="/" />
       <NavLink text="zubehör" link="/" />

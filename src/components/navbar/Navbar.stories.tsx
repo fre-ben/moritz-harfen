@@ -43,7 +43,6 @@ LinkDropdown.args = {
 
 export const logo = Template3.bind({});
 logo.args = {
-  size: "4xl",
   mr: "2",
 };
 
