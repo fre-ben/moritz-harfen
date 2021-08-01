@@ -10,18 +10,15 @@ type NavLinkProps = {
 const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
   const [showDropDown, setshowDropDown] = useState(false);
 
+  const menuItemStyle =
+    "text-lg mx-2 border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 cursor-pointer transition ease-in-out duration-300";
+
   //DropdownMenu Needs to get data from strapi?
   const dropDownMenu = (
     <div className="absolute bg-background md:ml-2 lg:ml-7">
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
-        Fiona
-      </p>
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
-        Irwin
-      </p>
-      <p className="text-lg mx-2 border-b border-opacity-0 border-black hover:border-opacity-100 cursor-pointer">
-        Test
-      </p>
+      <p className={menuItemStyle}>Fiona</p>
+      <p className={menuItemStyle}>Irwin</p>
+      <p className={menuItemStyle}>Test</p>
     </div>
   );
 
