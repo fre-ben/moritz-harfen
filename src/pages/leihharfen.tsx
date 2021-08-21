@@ -18,7 +18,7 @@ const IndexPage = () => {
             Für den Einstieg ins Harfenspiel, einen Spielkurs oder einfach zum
             Ausprobieren - für jede Gelegenheit das passende Instrument.
           </p>
-          <p className="mb-5">Anfragen bitte telefonisch oder per E-Mail.</p>
+          <p className="mb-10">Anfragen bitte telefonisch oder per E-Mail.</p>
           <ButtonLink destination="Kontakt" label="Kontakt" primary={true} />
         </div>
         <div className="pr-10">
