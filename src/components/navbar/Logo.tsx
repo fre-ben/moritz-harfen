@@ -3,12 +3,13 @@ import * as React from "react";
 
 type LogoProps = {
   mr: string;
+  size: string;
 };
 
-const Logo = ({ mr }: LogoProps) => {
+const Logo = ({ mr, size }: LogoProps) => {
   return (
     <Link
-      className={`text-4xl md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap`}
+      className={`text-${size}xl md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap`}
       to="/"
     >
       moritz harfen

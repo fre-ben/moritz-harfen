@@ -3,13 +3,13 @@ import { ReactChild } from "react";
 
 type ContentProps = {
   children: ReactChild[] | ReactChild;
-  custom?: string;
+  className?: string;
 };
 
-function Content({ children, custom }: ContentProps) {
+function Content({ children, className }: ContentProps) {
   return (
     <div
-      className={`grid grid-flow-col place-items-center px-10 gap-x-16 ${custom}`}
+      className={`grid pt-5 md:p5-10 lg:grid-flow-col md:grid-flow-row place-items-center lg:gap-x-16 gap-y-5 bg-background ${className}`}
     >
       {children}
     </div>

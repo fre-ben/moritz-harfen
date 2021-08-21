@@ -7,7 +7,7 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="grid auto-rows-min gap-y-12 place-items-center px-10 min-h-screen min-w-screen bg-background">
+    <div className="grid auto-rows-min place-items-center px-5 md:px-10 min-h-screen min-w-screen bg-background">
       {children}
     </div>
   );

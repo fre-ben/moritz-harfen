@@ -10,9 +10,9 @@ const IndexPage = () => {
     <Layout>
       <Navbar />
       <Content>
-        <div>
+        <div className="px-5">
           <h1 className="text-5xl mb-10">moritz harfen</h1>
-          <p className="text-lg mb-5">
+          <p className="text-lg mb-5 w-full">
             Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund –
             <br />
             ehemals <strong>„Atelier für keltische Harfen“</strong> von Albrecht
