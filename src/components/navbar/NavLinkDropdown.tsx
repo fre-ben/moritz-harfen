@@ -15,7 +15,7 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
 
   //DropdownMenu Needs to get data from strapi?
   const dropDownMenu = (
-    <div className="absolute bg-background md:ml-2 lg:ml-7">
+    <div className="absolute bg-background md:ml-2 lg:ml-7 pb-3">
       <p className={menuItemStyle}>Fiona</p>
       <p className={menuItemStyle}>Irwin</p>
       <p className={menuItemStyle}>Test</p>
@@ -26,7 +26,7 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
     <div
       onMouseEnter={() => setshowDropDown(!showDropDown)}
       onMouseLeave={() => setshowDropDown(!showDropDown)}
-      className="inline"
+      className="inline-block"
     >
       <p className="inline text-xl md:mx-2 lg:mx-7">
         <Link to={link}>{text}</Link>

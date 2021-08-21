@@ -11,7 +11,7 @@ const IndexPage = () => {
       <Navbar />
       <Content>
         <div className="px-5">
-          <h1 className="text-5xl mb-10">moritz harfen</h1>
+          <h1 className="text-5xl mb-10 font-medium">moritz harfen</h1>
           <p className="text-lg mb-5 w-full">
             Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund –
             <br />
