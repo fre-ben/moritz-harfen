@@ -3,7 +3,8 @@ import Logo from "./Logo";
 import NavLinkDropdown from "./NavLinkDropdown";
 import NavLink from "./NavLink";
 import BurgermenuButton from "../button/BurgermenuButton";
-import { Menu } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 
 const Navbar = () => {
   const DesktopNavItems = (
@@ -18,27 +19,37 @@ const Navbar = () => {
   );
 
   const MobileNavItems = (
-    <Menu.Items className="absolute right-0 justify-items-end w-full mt-6 md:mt-8 pt-6 bg-background grid grid-flow-row gap-y-4 ">
-      <Menu.Item>
-        <NavLink text="harfen" link="/" />
-        {/* Need to add the single harps here as well */}
-      </Menu.Item>
-      <Menu.Item>
-        <NavLink text="leihharfen" link="/" />
-      </Menu.Item>
-      <Menu.Item>
-        <NavLink text="zubehör" link="/" />
-      </Menu.Item>
-      <Menu.Item>
-        <NavLink text="werkstatt" link="/" />
-      </Menu.Item>
-      <Menu.Item>
-        <NavLink text="vita" link="/" />
-      </Menu.Item>
-      <Menu.Item>
-        <NavLink text="kontakt" link="/" />
-      </Menu.Item>
-    </Menu.Items>
+    <Transition
+      as={Fragment}
+      enter="transition ease-out duration-50"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
+      leave="transition ease-in duration-50"
+      leaveFrom="opacity-100"
+      leaveTo="opacity-0"
+    >
+      <Menu.Items className="absolute right-0 justify-items-end w-full mt-6 md:mt-8 pt-6 bg-background grid grid-flow-row gap-y-4 ">
+        <Menu.Item>
+          <NavLink text="harfen" link="/" />
+          {/* Need to add the single harps here as well */}
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink text="leihharfen" link="/" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink text="zubehör" link="/" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink text="werkstatt" link="/" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink text="vita" link="/" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink text="kontakt" link="/" />
+        </Menu.Item>
+      </Menu.Items>
+    </Transition>
   );
 
   return (
@@ -49,6 +60,7 @@ const Navbar = () => {
           <Menu.Button className="justify-self-end">
             <BurgermenuButton />
           </Menu.Button>
+
           {MobileNavItems}
         </Menu>
       </div>
