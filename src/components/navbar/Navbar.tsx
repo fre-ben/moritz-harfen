@@ -3,31 +3,58 @@ import Logo from "./Logo";
 import NavLinkDropdown from "./NavLinkDropdown";
 import NavLink from "./NavLink";
 import BurgermenuButton from "../button/BurgermenuButton";
+import { Menu } from "@headlessui/react";
 
 const Navbar = () => {
-  const NavItems = () => {
-    return (
-      <>
-        <NavLinkDropdown text="harfen" link="/" />
+  const DesktopNavItems = (
+    <>
+      <NavLinkDropdown text="harfen" link="/" />
+      <NavLink text="leihharfen" link="/" />
+      <NavLink text="zubehör" link="/" />
+      <NavLink text="werkstatt" link="/" />
+      <NavLink text="vita" link="/" />
+      <NavLink text="kontakt" link="/" />
+    </>
+  );
+
+  const MobileNavItems = (
+    <Menu.Items className="absolute right-0 justify-items-end w-full mt-6 md:mt-8 pt-6 bg-background grid grid-flow-row gap-y-4 ">
+      <Menu.Item>
+        <NavLink text="harfen" link="/" />
+        {/* Need to add the single harps here as well */}
+      </Menu.Item>
+      <Menu.Item>
         <NavLink text="leihharfen" link="/" />
+      </Menu.Item>
+      <Menu.Item>
         <NavLink text="zubehör" link="/" />
+      </Menu.Item>
+      <Menu.Item>
         <NavLink text="werkstatt" link="/" />
+      </Menu.Item>
+      <Menu.Item>
         <NavLink text="vita" link="/" />
+      </Menu.Item>
+      <Menu.Item>
         <NavLink text="kontakt" link="/" />
-      </>
-    );
-  };
+      </Menu.Item>
+    </Menu.Items>
+  );
 
   return (
     <nav className="inline-flex items-center sticky top-0 pt-10 z-50 bg-background w-full justify-center p-full">
-      <div className="visible md:hidden w-full grid grid-flow-col items-center">
+      <div className="visible xl:hidden w-full grid grid-flow-col items-center">
         <Logo mr="40" size="" />
-        <BurgermenuButton />
-        {/* Add Dropdown for NavLink Options, dropping down when clicking Burgermenu */}
+        <Menu>
+          <Menu.Button className="justify-self-end">
+            <BurgermenuButton />
+          </Menu.Button>
+          {MobileNavItems}
+        </Menu>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <Logo mr="40" size="4" />
-        {NavItems()}
+        {DesktopNavItems}
       </div>
     </nav>
   );
