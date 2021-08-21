@@ -10,7 +10,7 @@ const Navbar = () => {
   const DesktopNavItems = (
     <>
       <NavLinkDropdown text="harfen" link="/" />
-      <NavLink text="leihharfen" link="/" />
+      <NavLink text="leihharfen" link="leihharfen" />
       <NavLink text="zubehör" link="/" />
       <NavLink text="werkstatt" link="/" />
       <NavLink text="vita" link="/" />
@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* Need to add the single harps here as well */}
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="leihharfen" link="/" />
+          <NavLink text="leihharfen" link="leihharfen" />
         </Menu.Item>
         <Menu.Item>
           <NavLink text="zubehör" link="/" />
