@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         background: "#E6E6E6",
         highlight: "#FF4D2F",
+        moritzGray: "707070",
       },
     },
   },
