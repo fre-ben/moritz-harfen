@@ -10,7 +10,7 @@ const IndexPage = () => {
     <Layout>
       <Navbar />
       <Content>
-        <div className="lg:pl-20">
+        <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <h1 className="text-5xl mb-10 font-medium">Leihharfen</h1>
           <p className="mb-5 w-11/12">
             Sie möchten eine Harfe leihen? Bei uns finden Sie eine große Auswahl
@@ -23,7 +23,6 @@ const IndexPage = () => {
         </div>
         <div className="pr-10">
           <StaticImage
-            className=""
             src="../images/placeholder_dude.jpg"
             alt="placeholder image"
             placeholder="blurred"
