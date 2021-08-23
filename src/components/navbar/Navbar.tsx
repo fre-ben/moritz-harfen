@@ -60,7 +60,6 @@ const Navbar = () => {
           <Menu.Button className="justify-self-end">
             <BurgermenuButton />
           </Menu.Button>
-
           {MobileNavItems}
         </Menu>
       </div>
