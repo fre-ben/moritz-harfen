@@ -9,7 +9,7 @@ import { Fragment } from "react";
 const Navbar = () => {
   const DesktopNavItems = (
     <>
-      <NavLinkDropdown text="harfen" link="/" />
+      <NavLinkDropdown text="harfen" link="/harfen" />
       <NavLink text="leihharfen" link="leihharfen" />
       <NavLink text="zubehör" link="/" />
       <NavLink text="werkstatt" link="/" />
