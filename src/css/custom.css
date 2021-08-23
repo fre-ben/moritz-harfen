@@ -1,0 +1,9 @@
+/* CSS styles for Harfen page */
+.harfenImage {
+  filter: none;
+  transition: filter 0.3s;
+}
+
+.harfenImage:hover {
+  filter: blur(3px);
+}
