@@ -16,9 +16,9 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
   //DropdownMenu Needs to get data from strapi?
   const dropDownMenu = (
     <div className="absolute bg-background md:ml-2 lg:ml-7 pb-3">
-      <p className={menuItemStyle}>Fiona</p>
-      <p className={menuItemStyle}>Irwin</p>
-      <p className={menuItemStyle}>Test</p>
+      <p className={menuItemStyle}>Fiona (36 Saiten)</p>
+      <p className={menuItemStyle}>Wyda (34 Saiten)</p>
+      <p className={menuItemStyle}>Isabeu (29 Saiten)</p>
     </div>
   );
 
