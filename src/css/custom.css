@@ -1,9 +1,17 @@
 /* CSS styles for Harfen page */
 .harfenImage {
-  filter: none;
+  filter: blur(3px);
   transition: filter 0.3s;
 }
 
 .harfenImage:hover {
-  filter: blur(3px);
+  filter: none;
+}
+
+.supertest {
+  background-image: url("../images/harfen/wyda1.jpg");
+  background-size: cover;
+  background-position-y: center;
+  width: 400px;
+  height: 500px;
 }

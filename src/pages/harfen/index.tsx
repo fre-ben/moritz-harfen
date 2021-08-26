@@ -12,31 +12,26 @@ function Harfen() {
       <Content flow="row">
         <h1 className="text-5xl font-medium justify-self-start">Harfen</h1>
         <section className="grid grid-flow-col gap-x-5">
-          <StaticImage
-            className="harfenImage"
-            src="../../images/harfen/fiona1.jpg"
-            alt="Harfe Modell: Fiona"
-            placeholder="blurred"
-            width={400}
-            height={500}
-            onMouseEnter={() => null}
-          />
-          <StaticImage
-            className="harfenImage"
-            src="../../images/harfen/wyda1.jpg"
-            alt="Harfe Modell: Fiona"
-            placeholder="blurred"
-            width={400}
-            height={500}
-          />
-          <StaticImage
-            className="harfenImage"
-            src="../../images/harfen/isabeau1.jpg"
-            alt="Harfe Modell: Fiona"
-            placeholder="blurred"
-            width={400}
-            height={500}
-          />
+          <div className="grid">
+            <StaticImage
+              className="relative harfenImage"
+              src="../../images/harfen/fiona1.jpg"
+              alt="Harfe Modell: Fiona"
+              placeholder="blurred"
+              width={400}
+              height={500}
+              onMouseEnter={() => null}
+            />
+            <p className="text-center mt-2 font-bold text-3xl text-highlight">
+              Fiona
+            </p>
+            <p className="text-center font-bold text-lg">(36 Saiten)</p>
+          </div>
+          <div className="supertest grid place-items-center">
+            <p className="mt-2 font-bold text-3xl text-highlight opacity-0 w-full h-full hover:opacity-100">
+              Fiona
+            </p>
+          </div>
         </section>
       </Content>
     </Layout>
