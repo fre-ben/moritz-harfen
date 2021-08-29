@@ -9,7 +9,7 @@ import { Fragment } from "react";
 const Navbar = () => {
   const DesktopNavItems = (
     <>
-      <NavLinkDropdown text="harfen" link="/" />
+      <NavLinkDropdown text="harfen" link="/harfen" />
       <NavLink text="leihharfen" link="leihharfen" />
       <NavLink text="zubehör" link="/" />
       <NavLink text="werkstatt" link="/" />
@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <Menu.Items className="absolute right-0 justify-items-end w-full mt-6 md:mt-8 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
         <Menu.Item>
-          <NavLink text="harfen" link="/" />
+          <NavLink text="harfen" link="harfen" />
           {/* Need to add the single harps here as well */}
         </Menu.Item>
         <Menu.Item>

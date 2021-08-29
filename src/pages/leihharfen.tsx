@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Navbar />
-      <Content>
+      <Content flow="col">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <h1 className="text-5xl mb-10 font-medium">Leihharfen</h1>
           <p className="mb-5 w-11/12">
