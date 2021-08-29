@@ -1,38 +1,42 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import ButtonLink from "../../components/button/ButtonLink";
 import Content from "../../components/Content";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
-import "../../css/custom.css";
 
 function Harfen() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row">
-        <h1 className="text-5xl font-medium justify-self-start">Harfen</h1>
-        <section className="grid grid-flow-col gap-x-5">
-          <div className="grid">
-            <StaticImage
-              className="relative harfenImage"
-              src="../../images/harfen/fiona1.jpg"
-              alt="Harfe Modell: Fiona"
-              placeholder="blurred"
-              width={400}
-              height={500}
-              onMouseEnter={() => null}
+      {/* Seite braucht einen Infotext zu den Harfen, eventuell image gallery mit allen Harfen und 3 Buttons die jeweils zu den Harfen verlinken */}
+      <Content flow="col">
+        <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
+          <h1 className="text-5xl mb-10 font-medium">Harfen</h1>
+          <p className="mb-5 w-11/12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p className="mb-10">Schauen Sie nur - tolle Harfen!</p>
+          <div className="grid grid-flow-col place-items-start">
+            <ButtonLink
+              destination="harfen/fiona"
+              label="Fiona"
+              primary={true}
             />
-            <p className="text-center mt-2 font-bold text-3xl text-highlight">
-              Fiona
-            </p>
-            <p className="text-center font-bold text-lg">(36 Saiten)</p>
+            <ButtonLink destination="harfen/wyda" label="Wyda" primary={true} />
+            <ButtonLink
+              destination="harfen/isabeu"
+              label="Isabeu"
+              primary={true}
+            />
           </div>
-          <div className="supertest grid place-items-center">
-            <p className="mt-2 font-bold text-3xl text-highlight opacity-0 w-full h-full hover:opacity-100">
-              Fiona
-            </p>
-          </div>
-        </section>
+        </div>
+        <div className="pr-10">Platzhalter image gallery</div>
       </Content>
     </Layout>
   );
