@@ -30,7 +30,6 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-background-image`,
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
