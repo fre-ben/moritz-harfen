@@ -13,7 +13,7 @@ const Navbar = () => {
       <NavLink text="leihharfen" link="leihharfen" />
       <NavLink text="zubehör" link="/" />
       <NavLink text="werkstatt" link="werkstatt" />
-      <NavLink text="vita" link="/" />
+      <NavLink text="vita" link="vita" />
       <NavLink text="kontakt" link="/" />
     </>
   );
@@ -43,7 +43,7 @@ const Navbar = () => {
           <NavLink text="werkstatt" link="werkstatt" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="vita" link="/" />
+          <NavLink text="vita" link="vita" />
         </Menu.Item>
         <Menu.Item>
           <NavLink text="kontakt" link="/" />
