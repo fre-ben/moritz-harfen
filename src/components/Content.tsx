@@ -5,15 +5,21 @@ type ContentProps = {
   children: ReactChild[] | ReactChild;
   className?: string;
   flow: string;
+  headline: string;
 };
 
-function Content({ children, className, flow }: ContentProps) {
+function Content({ children, className, flow, headline }: ContentProps) {
   return (
-    <div
-      className={`grid pt-5 md:px-10 lg:grid-flow-${flow} md:grid-flow-row place-items-center lg:gap-x-16 gap-y-5 bg-background ${className}`}
-    >
-      {children}
-    </div>
+    <>
+      <h1 className="text-5xl pt-5 mb-10 font-medium md:pl-10 lg:pl-20">
+        {headline}
+      </h1>
+      <div
+        className={`grid pt-5 md:pl-10 lg:pl-0 lg:grid-flow-${flow} items-center md:justify-items-center md:grid-flow-row  lg:gap-x-16 gap-y-5 bg-background ${className}`}
+      >
+        {children}
+      </div>
+    </>
   );
 }
 
