@@ -7,11 +7,8 @@ function Vita() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row">
-        <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
-          <h1 className="text-5xl mb-10 font-medium">Vita</h1>
-          <p>Placeholder</p>
-        </div>
+      <Content flow="row" headline="Vita">
+        <p>Placeholder</p>
       </Content>
     </Layout>
   );
