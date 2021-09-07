@@ -10,7 +10,7 @@ type LogoProps = {
 const Logo = ({ mr, size, className }: LogoProps) => {
   return (
     <Link
-      className={`text-${size}xl md:text-4xl md:mx-4 lg:mx-7 sm:mr-${mr} whitespace-nowrap ${className}`}
+      className={`text-${size}xl md:text-4xl md:ml-0 lg:ml-0 sm:mr-${mr} whitespace-nowrap ${className}`}
       to="/"
     >
       moritz harfen
