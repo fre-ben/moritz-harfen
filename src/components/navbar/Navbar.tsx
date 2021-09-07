@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <nav className="inline-flex items-center sticky top-0 pt-10 lg:pl-10 md:pl-0 z-50 bg-background w-full justify-start">
       <div className="visible lg:hidden w-full grid grid-flow-col items-center">
-        <Logo className="" mr="40" size="" />
+        <Logo className="" mr="10" size="" />
         <Menu>
           <Menu.Button className="justify-self-end">
             <BurgermenuButton />
@@ -64,7 +64,7 @@ const Navbar = () => {
         </Menu>
       </div>
       <div className="hidden w-full lg:grid grid-flow-col items-center ">
-        <Logo className="" mr="40" size="4" />
+        <Logo className="" mr="10" size="4" />
         {DesktopNavItems}
       </div>
     </nav>
