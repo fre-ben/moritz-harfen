@@ -5,7 +5,7 @@ import ButtonLink from "../components/button/ButtonLink";
 import Content from "../components/Content";
 import { StaticImage } from "gatsby-plugin-image";
 
-const IndexPage = () => {
+const Leihharfen = () => {
   return (
     <Layout>
       <Navbar />
@@ -35,4 +35,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default Leihharfen;
