@@ -14,7 +14,7 @@ const Navbar = () => {
       <NavLink text="zubehör" link="/" />
       <NavLink text="werkstatt" link="werkstatt" />
       <NavLink text="vita" link="vita" />
-      <NavLink text="kontakt" link="/" />
+      <NavLink text="kontakt" link="kontakt" />
     </>
   );
 
@@ -46,7 +46,7 @@ const Navbar = () => {
           <NavLink text="vita" link="vita" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="kontakt" link="/" />
+          <NavLink text="kontakt" link="kontakt" />
         </Menu.Item>
       </Menu.Items>
     </Transition>
