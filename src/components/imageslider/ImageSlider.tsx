@@ -1,9 +1,13 @@
 import * as React from "react";
-import ImageGallery from "react-image-gallery";
+import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-function ImageSlider() {
-  const images = [
+export type ImageSliderProps = {
+  images?: ReactImageGalleryItem[];
+};
+
+function ImageSlider({ images }: ImageSliderProps) {
+  const placeholderImages = [
     {
       original: "https://picsum.photos/id/1018/1000/600/",
       thumbnail: "https://picsum.photos/id/1018/250/150/",
@@ -18,7 +22,13 @@ function ImageSlider() {
     },
   ];
 
-  return <ImageGallery items={images} showPlayButton={false} showNav={false} />;
+  return (
+    <ImageGallery
+      items={images ? images : placeholderImages}
+      showPlayButton={false}
+      showNav={false}
+    />
+  );
 }
 
 export default ImageSlider;
