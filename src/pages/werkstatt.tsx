@@ -7,9 +7,8 @@ function Werkstatt() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row">
+      <Content flow="row" headline="werkstatt">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
-          <h1 className="text-5xl mb-10 font-medium">Werkstatt</h1>
           <p className="mb-4">
             Die Harfenbauwerkstatt &quot;Atelier für keltische Harfen&quot;
             wurde 1990 von Albrecht Nüchter im hessischen Rimbach gegründet.

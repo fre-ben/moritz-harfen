@@ -9,9 +9,8 @@ function Harfen() {
     <Layout>
       <Navbar />
       {/* Seite braucht einen Infotext zu den Harfen, eventuell image gallery mit allen Harfen und 3 Buttons die jeweils zu den Harfen verlinken */}
-      <Content className="lg:grid-flow-col" flow="col">
+      <Content className="lg:grid-flow-col" flow="col" headline="harfen">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
-          <h1 className="text-5xl mb-10 font-medium">Harfen</h1>
           <p className="mb-5 w-11/12">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

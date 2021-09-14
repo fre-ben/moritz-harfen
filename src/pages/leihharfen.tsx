@@ -9,9 +9,8 @@ const Leihharfen = () => {
   return (
     <Layout>
       <Navbar />
-      <Content flow="col">
+      <Content flow="col" headline="leihharfen">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
-          <h1 className="text-5xl mb-10 font-medium">Leihharfen</h1>
           <p className="mb-5 w-11/12">
             Sie möchten eine Harfe leihen? Bei uns finden Sie eine große Auswahl
             an Harfen in den unterschiedlichsten Größen und Ausführungen. <br />
@@ -19,7 +18,7 @@ const Leihharfen = () => {
             Ausprobieren - für jede Gelegenheit das passende Instrument.
           </p>
           <p className="mb-10">Anfragen bitte telefonisch oder per E-Mail.</p>
-          <ButtonLink destination="Kontakt" label="Kontakt" primary={true} />
+          <ButtonLink destination="kontakt" label="Kontakt" primary={true} />
         </div>
         <div className="pr-10">
           <StaticImage

@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 function Footer() {
   return (
-    <footer className="mt-20 mb-5">
+    <footer className="grid place-items-center mt-20 mb-5">
       <p className="border-t border-moritzGrey px-5 md:px-20 pt-1 font-light text-sm">
         © 2021 | Moritz Dortmund |{" "}
         <Link
