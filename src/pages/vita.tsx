@@ -7,7 +7,7 @@ function Vita() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row" headline="Vita">
+      <Content flow="row" headline="vita">
         <p>Placeholder</p>
       </Content>
     </Layout>

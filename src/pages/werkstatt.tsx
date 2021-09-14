@@ -7,7 +7,7 @@ function Werkstatt() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row" headline="Werkstatt">
+      <Content flow="row" headline="werkstatt">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <p className="mb-4">
             Die Harfenbauwerkstatt &quot;Atelier für keltische Harfen&quot;

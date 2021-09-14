@@ -3,11 +3,11 @@ import Content from "../components/Content";
 import Layout from "../components/Layout";
 import Navbar from "../components/navbar/Navbar";
 
-function Vita() {
+function Kontakt() {
   return (
     <Layout>
       <Navbar />
-      <Content flow="row" headline="Kontakt">
+      <Content flow="row" headline="kontakt">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <div className="grid grid-flow-row md:grid-flow-col md:gap-x-20">
             <p className="mb-5 md:mb-0 whitespace-nowrap">
@@ -30,4 +30,4 @@ function Vita() {
   );
 }
 
-export default Vita;
+export default Kontakt;
