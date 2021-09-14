@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Navbar />
-      <Content flow="col" headline="moritz harfen">
+      <Content flow="col" headline="">
         <div className="px-5">
           <p className="text-lg mb-5 w-full">
             Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund –
