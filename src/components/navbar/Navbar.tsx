@@ -13,7 +13,7 @@ const Navbar = () => {
       <NavLink text="leihharfen" link="leihharfen" />
       <NavLink text="zubehör" link="" />
       <NavLink text="werkstatt" link="werkstatt" />
-      <NavLink text="vita" link="vita" />
+      {/* <NavLink text="vita" link="vita" /> */}
       <NavLink text="kontakt" link="kontakt" />
     </>
   );
@@ -42,9 +42,9 @@ const Navbar = () => {
         <Menu.Item>
           <NavLink text="werkstatt" link="werkstatt" />
         </Menu.Item>
-        <Menu.Item>
+        {/* <Menu.Item>
           <NavLink text="vita" link="vita" />
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item>
           <NavLink text="kontakt" link="kontakt" />
         </Menu.Item>
@@ -63,7 +63,7 @@ const Navbar = () => {
           {MobileNavItems}
         </Menu>
       </div>
-      <div className="hidden w-full lg:grid grid-flow-col items-center ">
+      <div className="hidden w-full lg:grid grid-flow-col items-center justify-items-center">
         <Logo className="" mr="10" size="4" />
         {DesktopNavItems}
       </div>
