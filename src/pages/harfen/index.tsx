@@ -12,13 +12,9 @@ function Harfen() {
       <Content className="lg:grid-flow-col" flow="col" headline="harfen">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <p className="mb-5 w-11/12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            In dieser Werkstatt entstehen handgefertigte Harfen aus
+            ausgewählten, regionalen Hölzern. Hier muss noch mehr Text hin, weil
+            Google will das so.
           </p>
           <p className="mb-10">Schauen Sie nur - tolle Harfen!</p>
           <div className="grid grid-flow-col place-items-start">
