@@ -28,7 +28,7 @@ const Navbar = () => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <Menu.Items className="absolute right-0 justify-items-end w-full mt-80 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
+      <Menu.Items className="absolute right-0 justify-items-end w-full mt-70 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
         <Menu.Item>
           <NavLink text="harfen" link="harfen" />
           {/* Need to add the single harps here as well */}
