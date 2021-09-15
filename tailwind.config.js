@@ -3,8 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      gridTemplateColumns: {
+        leader: "max-content auto",
+      },
       spacing: {
-        70: "17.2rem",
+        70: "17.17rem",
       },
       fontFamily: {
         sans: ["Poppins", "Helvetica", "Arial", "sans-serif"],
@@ -21,7 +24,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-background-image",
       options: {
         // add your own characters to escape, replacing the default ':/'
         specialChars: "/:",
