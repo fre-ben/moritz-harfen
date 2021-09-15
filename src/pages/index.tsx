@@ -18,7 +18,7 @@ const IndexPage = () => {
           layout="fixed"
           className="rounded-xl mx-5 lg:mx-0"
         />
-        <div className="grid px-5 justify-items-start sm:justify-items-center">
+        <div className="grid px-5 justify-items-start sm:justify-items-center border-highlight border-b pb-20">
           <p className="text-xl md:text-3xl mb-5 w-full">
             Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund
             <br />– ehemals <strong>„Atelier für keltische Harfen“</strong> von
