@@ -1,10 +1,40 @@
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import { ReactImageGalleryItem } from "react-image-gallery";
 import ButtonLink from "../../components/button/ButtonLink";
 import Content from "../../components/Content";
+import ImageSlider from "../../components/imageslider/ImageSlider";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
+import harps1 from "../../images/harfen/harps1.jpg";
+import harps2 from "../../images/harfen/harps2.jpg";
+import harps3 from "../../images/harfen/harps3.jpg";
+import harps4 from "../../images/harfen/harps4.jpg";
 
 function Harfen() {
+  const harpImages: ReactImageGalleryItem[] = [
+    {
+      original: harps1,
+      thumbnail: harps1,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps2,
+      thumbnail: harps2,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps3,
+      thumbnail: harps3,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps4,
+      thumbnail: harps4,
+      originalClass: "cursor-default",
+    },
+  ];
+
   return (
     <Layout>
       <Navbar />
@@ -35,7 +65,8 @@ function Harfen() {
             />
           </div>
         </div>
-        <div className="pr-10">Platzhalter image gallery</div>
+        <ImageSlider images={harpImages} />
+        {/* <div className="pr-10">Platzhalter image gallery</div> */}
       </Content>
     </Layout>
   );
