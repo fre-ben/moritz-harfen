@@ -28,6 +28,7 @@ function ImageSlider({ images }: ImageSliderProps) {
       items={images ? images : placeholderImages}
       showPlayButton={false}
       showNav={false}
+      lazyLoad={true}
     />
   );
 }
