@@ -21,14 +21,14 @@ function Werkstatt() {
           </p>
           <p className="mb-4">
             Am 4.4.2018 verstarb Albrecht und eine Nachfolge war zunächst
-            ungewiss. Im Jahr 2020 wurde die Werkstatt von dem Instrumentenbauer
+            ungewiss. Im Jahr 2021 wurde die Werkstatt von dem Instrumentenbauer
             Moritz Dortmund übernommen. Moritz hat das Schreinerhandwerk in
             Berchtesgaden und anschließend das Instrumentenbauhandwerk in
             Mittenwald gelernt und war dreieinhalb Jahre als Wandergeselle auf
             traditioneller Wanderschaft. Auf der Wanderschaft lernte Moritz das
             &quot;Atelier für keltische Harfen&quot; kennen und entschloss sich
-            dazu, die Werkstatt zu übernehmen. Claudia führt das
-            Leihharfengeschäft weiter.
+            dazu, die Werkstatt zu übernehmen, während Claudia das
+            Leihharfengeschäft weiterführt.
           </p>
           <p className="mb-4">
             So wird Albrecht Nüchters Fackel weitergetragen und es entstehen in
