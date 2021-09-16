@@ -13,20 +13,24 @@ function Harfen() {
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <p className="mb-5 w-11/12">
             In dieser Werkstatt entstehen handgefertigte Harfen aus
-            ausgewählten, regionalen Hölzern. Hier muss noch mehr Text hin, weil
-            Google will das so.
+            ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und
+            langjährige Erfahrung garantieren höchste Spielfreude – von der
+            großen 36-saitigen Harfe bis zur kleinen 29-saitigen.
           </p>
-          <p className="mb-10">Schauen Sie nur - tolle Harfen!</p>
-          <div className="grid grid-flow-col place-items-start">
+          <div className="grid grid-flow-col gap-x-2 place-items-start">
             <ButtonLink
               destination="harfen/fiona"
-              label="Fiona"
+              label="Fiona (36 Saiten)"
               primary={true}
             />
-            <ButtonLink destination="harfen/wyda" label="Wyda" primary={true} />
+            <ButtonLink
+              destination="harfen/wyda"
+              label="Wyda (34 Saiten)"
+              primary={true}
+            />
             <ButtonLink
               destination="harfen/isabeu"
-              label="Isabeu"
+              label="Isabeu (29 Saiten)"
               primary={true}
             />
           </div>
