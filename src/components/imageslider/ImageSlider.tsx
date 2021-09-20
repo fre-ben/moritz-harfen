@@ -28,7 +28,9 @@ function ImageSlider({ images }: ImageSliderProps) {
       items={images ? images : placeholderImages}
       showPlayButton={false}
       showNav={false}
+      showThumbnails={true}
       lazyLoad={true}
+      // thumbnailPosition="right"
     />
   );
 }
