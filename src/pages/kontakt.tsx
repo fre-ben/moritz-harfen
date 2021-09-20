@@ -11,7 +11,7 @@ function Kontakt() {
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <div className="grid grid-flow-row md:grid-flow-col md:gap-x-20">
             <p className="mb-5 md:mb-0 whitespace-nowrap">
-              Harfenbauwerkstatt
+              Harfenbau
               <br />
               Moritz Dortmund
               <br />
@@ -21,7 +21,26 @@ function Kontakt() {
             <p className="whitespace-nowrap">
               Telefon: 06673 918 919
               <br />
-              E-Mail: moritz-harfen@posteo.de
+              E-Mail:{" "}
+              <a
+                href="mailto:moritz-harfen@posteo.de"
+                className="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
+              >
+                moritz-harfen@posteo.de
+              </a>
+            </p>
+          </div>
+          <p className="mt-5">Termine nur nach Vereinbarung!</p>
+          <div className="mt-5">
+            <h3 className="text-lg font-bold">Anfahrt</h3>
+            <p>
+              Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld
+              <br />
+              Buslinien: 385 von Neukirchen nach Kruspis und Linie 365 von Bad
+              Hersfeld nach Kruspis.
+              <br />
+              Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis
+              Neukirchen)
             </p>
           </div>
           <div className="w-40 mt-10 pt-10 border-t-2 border-highlight"></div>

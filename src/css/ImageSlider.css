@@ -1,0 +1,16 @@
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 4px solid #ff4d2f;
+  border-radius: 4px;
+}
+
+.image-gallery-thumbnail:hover {
+  outline: none;
+  border: 4px solid #ff4d2f;
+  border-radius: 4px;
+}
+
+.image-gallery-icon:hover {
+  color: #ff4d2f;
+}
