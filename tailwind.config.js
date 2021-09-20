@@ -8,6 +8,7 @@ module.exports = {
       },
       spacing: {
         70: "17.17rem",
+        100: "26.4rem",
       },
       fontFamily: {
         sans: ["Poppins", "Helvetica", "Arial", "sans-serif"],
