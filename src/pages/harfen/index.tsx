@@ -1,4 +1,3 @@
-import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import { ReactImageGalleryItem } from "react-image-gallery";
 import ButtonLink from "../../components/button/ButtonLink";
@@ -10,6 +9,8 @@ import harps1 from "../../images/harfen/harps1.jpg";
 import harps2 from "../../images/harfen/harps2.jpg";
 import harps3 from "../../images/harfen/harps3.jpg";
 import harps4 from "../../images/harfen/harps4.jpg";
+import harps7 from "../../images/harfen/harps7.jpg";
+import harps8 from "../../images/harfen/harps8.jpg";
 
 function Harfen() {
   const harpImages: ReactImageGalleryItem[] = [
@@ -33,12 +34,21 @@ function Harfen() {
       thumbnail: harps4,
       originalClass: "cursor-default",
     },
+    {
+      original: harps7,
+      thumbnail: harps7,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps8,
+      thumbnail: harps8,
+      originalClass: "cursor-default",
+    },
   ];
 
   return (
     <Layout>
       <Navbar />
-      {/* Seite braucht einen Infotext zu den Harfen, eventuell image gallery mit allen Harfen und 3 Buttons die jeweils zu den Harfen verlinken */}
       <Content className="lg:grid-flow-col" flow="col" headline="harfen">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <p className="mb-5 w-11/12">
@@ -66,7 +76,6 @@ function Harfen() {
           </div>
         </div>
         <ImageSlider images={harpImages} />
-        {/* <div className="pr-10">Platzhalter image gallery</div> */}
       </Content>
     </Layout>
   );
