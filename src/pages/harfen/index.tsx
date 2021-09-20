@@ -17,43 +17,31 @@ function Harfen() {
     {
       original: harps1,
       thumbnail: harps1,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
     {
       original: harps2,
       thumbnail: harps2,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
     {
       original: harps3,
       thumbnail: harps3,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
     {
       original: harps4,
       thumbnail: harps4,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
     {
       original: harps7,
       thumbnail: harps7,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
     {
       original: harps8,
       thumbnail: harps8,
-      thumbnailWidth: 10,
-      thumbnailHeight: 10,
       originalClass: "cursor-default",
     },
   ];

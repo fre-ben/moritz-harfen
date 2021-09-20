@@ -27,10 +27,10 @@ function ImageSlider({ images }: ImageSliderProps) {
     <ImageGallery
       items={images ? images : placeholderImages}
       showPlayButton={false}
-      showNav={false}
-      showThumbnails={true}
+      showNav={true}
+      showBullets={true}
+      showThumbnails={false}
       lazyLoad={true}
-      // thumbnailPosition="right"
     />
   );
 }
