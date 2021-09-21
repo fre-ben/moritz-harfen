@@ -51,7 +51,7 @@ function Harfen() {
             langjährige Erfahrung garantieren höchste Spielfreude – von der
             großen 36-saitigen Harfe bis zur kleinen 29-saitigen.
           </p>
-          <div className="grid grid-flow-col gap-x-2 place-items-start">
+          <div className="grid grid-flow-col gap-x-2 place-items-start w-10/12">
             <ButtonLink
               destination="harfen/fiona"
               label="Fiona (36 Saiten)"
@@ -63,13 +63,15 @@ function Harfen() {
               primary={true}
             />
             <ButtonLink
-              destination="harfen/isabeu"
-              label="Isabeu (29 Saiten)"
+              destination="harfen/isabeau"
+              label="Isabeau (29 Saiten)"
               primary={true}
             />
           </div>
         </div>
-        <ImageSlider images={harpImages} />
+        <div className="mr-0 lg:mr-10">
+          <ImageSlider images={harpImages} />
+        </div>
       </Content>
     </Layout>
   );

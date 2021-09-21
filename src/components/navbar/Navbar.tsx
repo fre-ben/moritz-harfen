@@ -40,7 +40,7 @@ const Navbar = () => {
           <NavLink text="wyda" link="harfen/wyda" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="isabeu" link="harfen/isabeu" />
+          <NavLink text="isabeau" link="harfen/isabeau" />
         </Menu.Item>
         <Menu.Item>
           <NavLink className="mr-5" text="leihharfen" link="leihharfen" />

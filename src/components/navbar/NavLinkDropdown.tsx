@@ -20,7 +20,7 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
       <p className={menuItemStyle}>
         <Link to="/harfen/wyda">Wyda (34 Saiten)</Link>
       </p>
-      <p className={menuItemStyle}>Isabeu (29 Saiten)</p>
+      <p className={menuItemStyle}>Isabeau (29 Saiten)</p>
     </div>
   );
 
