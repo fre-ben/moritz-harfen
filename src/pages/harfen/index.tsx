@@ -16,32 +16,26 @@ function Harfen() {
   const harpImages: ReactImageGalleryItem[] = [
     {
       original: harps1,
-      thumbnail: harps1,
       originalClass: "cursor-default",
     },
     {
       original: harps2,
-      thumbnail: harps2,
       originalClass: "cursor-default",
     },
     {
       original: harps3,
-      thumbnail: harps3,
       originalClass: "cursor-default",
     },
     {
       original: harps4,
-      thumbnail: harps4,
       originalClass: "cursor-default",
     },
     {
       original: harps7,
-      thumbnail: harps7,
       originalClass: "cursor-default",
     },
     {
       original: harps8,
-      thumbnail: harps8,
       originalClass: "cursor-default",
     },
   ];
