@@ -12,7 +12,7 @@ function Wyda() {
         <div className="lg:pl-20 sm:pl-0">
           <ImageSlider images={null} />
         </div>
-        <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
+        <div className="md:w-7/12 lg:w-9/12">
           <p className="mb-5 w-11/12">
             Die Mittlere von Albrecht Nüchters Harfen:
             <br />
@@ -21,7 +21,7 @@ function Wyda() {
           <table>
             <tr>
               <td>Saiten:</td>
-              <td className="pl-3">34 (C-a&lsquo;&lsquo;&lsquo;)</td>
+              <td className="pl-3">34 (a&lsquo;&lsquo;&lsquo;-C)</td>
             </tr>
             <tr>
               <td>Höhe:</td>
