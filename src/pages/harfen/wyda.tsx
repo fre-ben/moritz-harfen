@@ -8,17 +8,21 @@ function Wyda() {
   return (
     <Layout>
       <Navbar />
-      <Content className="lg:grid-flow-col" flow="col" headline="wyda">
+      <Content
+        className="lg:grid-flow-col"
+        flow="col"
+        headline="wyda (34 Saiten)"
+      >
         <div className="lg:pl-20 sm:pl-0">
           <ImageSlider images={null} />
         </div>
         <div className="md:w-7/12 lg:w-9/12">
-          <p className="mb-5 w-11/12">
+          <p className="mb-5 w-11/12 text-lg">
             Die Mittlere von Albrecht Nüchters Harfen:
             <br />
             Voller Klang und großer Saitenumfang in einer handlicheren Größe.
           </p>
-          <table>
+          <table className="text-lg">
             <tr>
               <td>Saiten:</td>
               <td className="pl-3">34 (a&lsquo;&lsquo;&lsquo;-C)</td>
