@@ -28,25 +28,34 @@ const Navbar = () => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <Menu.Items className="absolute right-0 justify-items-end w-full mt-70 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
+      <Menu.Items className="absolute right-0 justify-items-end w-full mt-100 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
         <Menu.Item>
-          <NavLink text="harfen" link="harfen" />
+          <NavLink className="mr-5" text="harfen" link="harfen" />
           {/* Need to add the single harps here as well */}
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="leihharfen" link="leihharfen" />
+          <NavLink text="fiona" link="harfen/fiona" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="zubehör" link="" />
+          <NavLink text="wyda" link="harfen/wyda" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="werkstatt" link="werkstatt" />
+          <NavLink text="isabeau" link="harfen/isabeau" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink className="mr-5" text="leihharfen" link="leihharfen" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink className="mr-5" text="zubehör" link="" />
+        </Menu.Item>
+        <Menu.Item>
+          <NavLink className="mr-5" text="werkstatt" link="werkstatt" />
         </Menu.Item>
         {/* <Menu.Item>
           <NavLink text="vita" link="vita" />
         </Menu.Item> */}
         <Menu.Item>
-          <NavLink text="kontakt" link="kontakt" />
+          <NavLink className="mr-5" text="kontakt" link="kontakt" />
         </Menu.Item>
       </Menu.Items>
     </Transition>
