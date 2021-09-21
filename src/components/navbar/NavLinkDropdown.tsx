@@ -17,13 +17,13 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
   const dropDownMenu = (
     <div className="absolute bg-background md:ml-2 lg:ml-7 pb-3">
       <p className={menuItemStyle}>
-        <Link to="/harfen/fiona">Fiona (36 Saiten)</Link>
+        <Link to="/harfen/fiona">fiona (36 Saiten)</Link>
       </p>
       <p className={menuItemStyle}>
-        <Link to="/harfen/wyda">Wyda (34 Saiten)</Link>
+        <Link to="/harfen/wyda">wyda (34 Saiten)</Link>
       </p>
       <p className={menuItemStyle}>
-        <Link to="/harfen/isabeau">Isabeau (29 Saiten)</Link>
+        <Link to="/harfen/isabeau">isabeau (29 Saiten)</Link>
       </p>
     </div>
   );
