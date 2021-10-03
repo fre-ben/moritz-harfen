@@ -36,7 +36,7 @@ function Kontakt() {
             <p>
               Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld
               <br />
-              Buslinien: 385 von Neukirchen nach Kruspis und Linie 365 von Bad
+              Buslinien: 385 von Neukirchen nach Kruspis oder Linie 365 von Bad
               Hersfeld nach Kruspis.
               <br />
               Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis
@@ -50,7 +50,7 @@ function Kontakt() {
                 <big>Datenschutzerklärung</big>
               </strong>
             </p>
-            <p>
+            <p className="my-2">
               <strong>Allgemeiner Hinweis und Pflichtinformationen</strong>
             </p>
             <p>
@@ -60,13 +60,11 @@ function Kontakt() {
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser
               Website ist:
             </p>
-            <p>
-              <span id="s3-t-firma">Moritz Harfen</span>
-              <br></br>
+            <p className="ml-5">
               <span id="s3-t-ansprechpartner">Moritz Dortmund</span>
-              <br></br>
+              <br />
               <span id="s3-t-strasse">Birkenstraße 5</span>
-              <br></br>
+              <br />
               <span id="s3-t-plz">36166 </span>
               <span id="s3-t-ort">Haunetal - Kruspis</span>
             </p>
@@ -75,7 +73,7 @@ function Kontakt() {
               anderen über die Zwecke und Mittel der Verarbeitung von
               personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong>
             </p>
             <p>
@@ -86,7 +84,7 @@ function Kontakt() {
               Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf
               unberührt.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>
                 Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
               </strong>
@@ -109,7 +107,7 @@ function Kontakt() {
               </a>
               .
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Recht auf Datenübertragbarkeit</strong>
             </p>
             <p>
@@ -121,7 +119,7 @@ function Kontakt() {
               Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch
               machbar ist.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>
                 Recht auf Auskunft, Berichtigung, Sperrung, Löschung
               </strong>
@@ -136,7 +134,7 @@ function Kontakt() {
               personenbezogene Daten können Sie sich jederzeit über die im
               Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>SSL- bzw. TLS-Verschlüsselung</strong>
             </p>
             <p>
@@ -148,7 +146,7 @@ function Kontakt() {
               „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der
               Browserzeile.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Server-Log-Dateien</strong>
             </p>
             <p>
