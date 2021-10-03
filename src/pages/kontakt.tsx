@@ -36,7 +36,7 @@ function Kontakt() {
             <p>
               Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld
               <br />
-              Buslinien: 385 von Neukirchen nach Kruspis und Linie 365 von Bad
+              Buslinien: 385 von Neukirchen nach Kruspis oder Linie 365 von Bad
               Hersfeld nach Kruspis.
               <br />
               Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis
