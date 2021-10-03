@@ -16,6 +16,7 @@ function LeaderDisclaimer() {
             alt="placeholder image"
             placeholder="blurred"
             width={150}
+            quality={100}
           />
         </a>
         <p className="justify-self-start">
@@ -35,6 +36,7 @@ function LeaderDisclaimer() {
             alt="placeholder image"
             placeholder="blurred"
             width={100}
+            quality={100}
           />
         </a>
         <p>
@@ -54,6 +56,7 @@ function LeaderDisclaimer() {
             alt="placeholder image"
             placeholder="blurred"
             width={70}
+            quality={100}
           />
         </a>
         <a target="_blank" rel="noreferrer" href="http://eler.hessen.de">
@@ -62,6 +65,7 @@ function LeaderDisclaimer() {
             alt="placeholder image"
             placeholder="blurred"
             width={62}
+            quality={100}
           />
         </a>
       </div>
