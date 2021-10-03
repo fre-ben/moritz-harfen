@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <NavLinkDropdown text="harfen" link="/harfen" />
       <NavLink text="leihharfen" link="leihharfen" />
-      <NavLink text="zubehör" link="" />
+      <NavLink text="zubehör" link="zubehoer" />
       <NavLink text="werkstatt" link="werkstatt" />
       {/* <NavLink text="vita" link="vita" /> */}
       <NavLink text="kontakt" link="kontakt" />
@@ -46,7 +46,7 @@ const Navbar = () => {
           <NavLink className="mr-5" text="leihharfen" link="leihharfen" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink className="mr-5" text="zubehör" link="" />
+          <NavLink className="mr-5" text="zubehör" link="zubehoer" />
         </Menu.Item>
         <Menu.Item>
           <NavLink className="mr-5" text="werkstatt" link="werkstatt" />
