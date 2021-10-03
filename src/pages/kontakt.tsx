@@ -50,7 +50,7 @@ function Kontakt() {
                 <big>Datenschutzerklärung</big>
               </strong>
             </p>
-            <p>
+            <p className="my-2">
               <strong>Allgemeiner Hinweis und Pflichtinformationen</strong>
             </p>
             <p>
@@ -73,7 +73,7 @@ function Kontakt() {
               anderen über die Zwecke und Mittel der Verarbeitung von
               personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong>
             </p>
             <p>
@@ -84,7 +84,7 @@ function Kontakt() {
               Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf
               unberührt.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>
                 Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
               </strong>
@@ -107,7 +107,7 @@ function Kontakt() {
               </a>
               .
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Recht auf Datenübertragbarkeit</strong>
             </p>
             <p>
@@ -119,7 +119,7 @@ function Kontakt() {
               Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch
               machbar ist.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>
                 Recht auf Auskunft, Berichtigung, Sperrung, Löschung
               </strong>
@@ -134,7 +134,7 @@ function Kontakt() {
               personenbezogene Daten können Sie sich jederzeit über die im
               Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>SSL- bzw. TLS-Verschlüsselung</strong>
             </p>
             <p>
@@ -146,7 +146,7 @@ function Kontakt() {
               „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der
               Browserzeile.
             </p>
-            <p>
+            <p className="mt-2">
               <strong>Server-Log-Dateien</strong>
             </p>
             <p>
