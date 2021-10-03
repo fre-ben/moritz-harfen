@@ -60,13 +60,11 @@ function Kontakt() {
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser
               Website ist:
             </p>
-            <p>
-              <span id="s3-t-firma">Moritz Harfen</span>
-              <br></br>
+            <p className="ml-5">
               <span id="s3-t-ansprechpartner">Moritz Dortmund</span>
-              <br></br>
+              <br />
               <span id="s3-t-strasse">Birkenstraße 5</span>
-              <br></br>
+              <br />
               <span id="s3-t-plz">36166 </span>
               <span id="s3-t-ort">Haunetal - Kruspis</span>
             </p>
