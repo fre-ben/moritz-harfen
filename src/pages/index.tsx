@@ -10,14 +10,16 @@ import { Helmet } from "react-helmet";
 const IndexPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta
-          charSet="utf-8"
-          name="description"
-          content="Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund"
-        />
-        <title>moritz harfen</title>
-      </Helmet>
+      <Helmet
+        title="moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content flow="row" headline="">
         <StaticImage
