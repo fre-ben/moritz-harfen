@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Content from "../components/Content";
 import Layout from "../components/Layout";
 import Navbar from "../components/navbar/Navbar";
@@ -7,6 +8,16 @@ import Navbar from "../components/navbar/Navbar";
 function Werkstatt() {
   return (
     <Layout>
+      <Helmet
+        title="werkstatt | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Informationen zur Werkstatt und Historie von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content flow="row" headline="werkstatt">
         <section className="lg:pl-20 md:w-11/12 lg:w-9/12 grid grid-flow-row gap-y-5">

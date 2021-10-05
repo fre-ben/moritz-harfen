@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Content from "../components/Content";
 import Layout from "../components/Layout";
 import Navbar from "../components/navbar/Navbar";
@@ -6,6 +7,16 @@ import Navbar from "../components/navbar/Navbar";
 function Kontakt() {
   return (
     <Layout>
+      <Helmet
+        title="kontakt | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Kontaktinformationen und Impressum von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content flow="row" headline="kontakt">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">

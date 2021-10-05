@@ -8,6 +8,7 @@ import wyda1 from "../../images/harfen/wyda1.jpg";
 import wyda2 from "../../images/harfen/wyda2.jpg";
 import wyda3 from "../../images/harfen/wyda3.jpg";
 import wyda4 from "../../images/harfen/wyda4.jpg";
+import { Helmet } from "react-helmet";
 
 function Wyda() {
   const wydaImages: ReactImageGalleryItem[] = [
@@ -31,6 +32,16 @@ function Wyda() {
 
   return (
     <Layout>
+      <Helmet
+        title="wyda (34 Saiten) | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content
         className="lg:grid-flow-col"

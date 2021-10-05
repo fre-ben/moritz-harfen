@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Content from "../../components/Content";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
@@ -6,6 +7,16 @@ import Navbar from "../../components/navbar/Navbar";
 function Fiona() {
   return (
     <Layout>
+      <Helmet
+        title="fiona (36 Saiten) | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Übersicht, Fotos und Informationen zu der Harfe Fiona (36 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content
         className="lg:grid-flow-col"

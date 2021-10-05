@@ -5,10 +5,21 @@ import ButtonLink from "../components/button/ButtonLink";
 import Content from "../components/Content";
 import { StaticImage } from "gatsby-plugin-image";
 import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Helmet
+        title="moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content flow="row" headline="">
         <StaticImage

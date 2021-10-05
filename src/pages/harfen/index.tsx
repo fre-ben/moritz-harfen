@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import { ReactImageGalleryItem } from "react-image-gallery";
 import ButtonLink from "../../components/button/ButtonLink";
 import Content from "../../components/Content";
@@ -42,6 +43,16 @@ function Harfen() {
 
   return (
     <Layout>
+      <Helmet
+        title="harfen | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Übersicht, Fotos und Informationen zu den Harfen von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline="harfen">
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
