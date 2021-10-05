@@ -52,6 +52,7 @@ function Harfen() {
               "Übersicht, Fotos und Informationen zu den Harfen von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline="harfen">

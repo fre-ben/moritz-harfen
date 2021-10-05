@@ -41,6 +41,7 @@ function Wyda() {
               "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content

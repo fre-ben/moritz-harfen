@@ -36,6 +36,7 @@ function Zubehoer() {
               "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline="zubehör">

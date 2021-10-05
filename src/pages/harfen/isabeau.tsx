@@ -16,6 +16,7 @@ function Isabeau() {
               "Übersicht, Fotos und Informationen zu der Harfe Isabeau (29 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content

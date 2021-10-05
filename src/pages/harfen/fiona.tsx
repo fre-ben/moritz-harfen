@@ -16,6 +16,7 @@ function Fiona() {
               "Übersicht, Fotos und Informationen zu der Harfe Fiona (36 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content

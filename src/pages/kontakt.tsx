@@ -16,6 +16,7 @@ function Kontakt() {
               "Kontaktinformationen und Impressum von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content flow="row" headline="kontakt">

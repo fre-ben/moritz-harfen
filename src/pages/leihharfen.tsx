@@ -18,6 +18,7 @@ const Leihharfen = () => {
               "Leihharfen service informationen von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content flow="col" headline="leihharfen">

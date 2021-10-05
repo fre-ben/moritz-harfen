@@ -19,6 +19,7 @@ const IndexPage = () => {
               "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content flow="row" headline="">

@@ -17,6 +17,7 @@ function Werkstatt() {
               "Informationen zur Werkstatt und Historie von der Harfenbauwerkstatt Moritz Dortmund",
           },
         ]}
+        htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
       <Content flow="row" headline="werkstatt">
