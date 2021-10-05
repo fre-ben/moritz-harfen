@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import saiten from "../images/zubehoer/Saiten.jpg";
 import stimmschluessel from "../images/zubehoer/Stimmschluessel.jpg";
 import taschen from "../images/zubehoer/Taschen.jpg";
+import { Helmet } from "react-helmet";
 
 function Zubehoer() {
   const zubehoerImages: ReactImageGalleryItem[] = [
@@ -26,6 +27,16 @@ function Zubehoer() {
 
   return (
     <Layout>
+      <Helmet
+        title="zubehör | moritz harfen"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund",
+          },
+        ]}
+      />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline="zubehör">
         <div className="lg:pl-20 sm:pl-0">
