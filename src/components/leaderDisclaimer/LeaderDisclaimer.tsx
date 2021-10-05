@@ -3,7 +3,7 @@ import * as React from "react";
 
 function LeaderDisclaimer() {
   return (
-    <section className="grid pl-5 lg:pl-28 mt-20 gap-y-5">
+    <section className="grid mt-20 gap-y-5">
       <div className="grid sm:grid-cols-leader gap-x-5 items-center gap-y-5">
         <a
           target="_blank"
