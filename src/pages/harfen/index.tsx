@@ -65,18 +65,24 @@ function Harfen() {
           <div className="grid grid-flow-col gap-x-2 place-items-start w-10/12">
             <ButtonLink
               destination="harfen/fiona"
-              label="Fiona (36 Saiten)"
+              label="Fiona"
+              labelSecondary="(36 Saiten)"
               primary={true}
+              doublespace={true}
             />
             <ButtonLink
               destination="harfen/wyda"
-              label="Wyda (34 Saiten)"
+              label="Wyda"
+              labelSecondary="(34 Saiten)"
               primary={true}
+              doublespace={true}
             />
             <ButtonLink
               destination="harfen/isabeau"
-              label="Isabeau (29 Saiten)"
+              label="Isabeau"
+              labelSecondary="(29 Saiten)"
               primary={true}
+              doublespace={true}
             />
           </div>
         </div>
