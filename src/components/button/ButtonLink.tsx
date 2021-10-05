@@ -5,9 +5,17 @@ export type ButtonLinkProps = {
   destination: string;
   label: string;
   primary: boolean;
+  doublespace?: boolean;
+  labelSecondary?: string;
 };
 
-function ButtonLink({ destination, label, primary }: ButtonLinkProps) {
+function ButtonLink({
+  destination,
+  label,
+  primary,
+  doublespace,
+  labelSecondary,
+}: ButtonLinkProps) {
   const styles = {
     primary:
       "border-highlight hover:border-opacity-100 focus:border-opacity-100",
@@ -22,7 +30,8 @@ function ButtonLink({ destination, label, primary }: ButtonLinkProps) {
       }`}
       to={`/${destination}`}
     >
-      {label}
+      <span>{label}</span>
+      {doublespace ? <p>{labelSecondary}</p> : null}
     </Link>
   );
 }
