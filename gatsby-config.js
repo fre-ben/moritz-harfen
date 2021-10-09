@@ -30,6 +30,16 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-plugin-umami`,
+      options: {
+        websiteId: "d62e84fc-3d2f-43bf-ad21-966755a0ea24",
+        srcUrl: "https://plausible.moritz-harfen.de/umami.js",
+        includeInDevelopment: false,
+        autoTrack: true,
+        respectDoNotTrack: true,
+      },
+    },
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
