@@ -28,19 +28,18 @@ const Navbar = () => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <Menu.Items className="absolute right-0 justify-items-end w-full mt-100 pt-6 pb-2 bg-background grid grid-flow-row gap-y-4 ">
+      <Menu.Items className="absolute right-0 top-18 md:top-20 justify-items-end w-full pt-6 pb-24 bg-background grid grid-flow-row gap-y-4 max-h-screen overflow-scroll overflow-x-hidden">
         <Menu.Item>
           <NavLink className="mr-5" text="harfen" link="harfen" />
-          {/* Need to add the single harps here as well */}
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="fiona" link="harfen/fiona" />
+          <NavLink className="mr-5" text="fiona" link="harfen/fiona" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="wyda" link="harfen/wyda" />
+          <NavLink className="mr-5" text="wyda" link="harfen/wyda" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink text="isabeau" link="harfen/isabeau" />
+          <NavLink className="mr-5" text="isabeau" link="harfen/isabeau" />
         </Menu.Item>
         <Menu.Item>
           <NavLink className="mr-5" text="leihharfen" link="leihharfen" />
