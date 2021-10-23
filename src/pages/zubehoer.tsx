@@ -43,7 +43,7 @@ function Zubehoer() {
         <div className="lg:pl-20 sm:pl-0">
           <ImageSlider images={zubehoerImages} />
         </div>
-        <div className="md:w-7/12 lg:w-10/12">
+        <div className="md:w-11/12 lg:w-10/12">
           <p className="mb-5 w-11/12 text-lg">
             Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen,
             Saiten und Stimmschlüssel.
