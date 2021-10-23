@@ -5,7 +5,7 @@ type ContentProps = {
   children: ReactChild[] | ReactChild;
   className?: string;
   flow: string;
-  headline: string;
+  headline: string | JSX.Element;
 };
 
 function Content({ children, className, flow, headline }: ContentProps) {
