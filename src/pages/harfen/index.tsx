@@ -62,6 +62,9 @@ function Harfen() {
             ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und
             langjährige Erfahrung garantieren höchste Spielfreude – von der
             großen 36-saitigen Harfe bis zur kleinen 29-saitigen.
+            <br />
+            <br />
+            Preise auf Anfrage.
           </p>
           <div className="grid grid-flow-col gap-x-2 place-items-start w-10/12">
             <ButtonLink
