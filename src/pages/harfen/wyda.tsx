@@ -30,6 +30,13 @@ function Wyda() {
     },
   ];
 
+  const headline = (
+    <div className="grid grid-flow-row gap-y-2 md:gap-y-0 md:grid-flow-col md:justify-start md:gap-x-3">
+      <span>wyda</span>
+      <span>(34 Saiten)</span>
+    </div>
+  );
+
   return (
     <Layout>
       <Helmet
@@ -44,15 +51,11 @@ function Wyda() {
         htmlAttributes={{ lang: "de" }}
       />
       <Navbar />
-      <Content
-        className="lg:grid-flow-col"
-        flow="col"
-        headline="wyda (34 Saiten)"
-      >
+      <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">
           <ImageSlider images={wydaImages} />
         </div>
-        <div className="md:w-7/12 lg:w-10/12">
+        <div className="md:w-10/12 lg:w-10/12">
           <p className="mb-5 w-11/12 text-lg">
             Die Mittlere von Albrecht Nüchters Harfen:
             <br />
