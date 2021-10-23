@@ -28,7 +28,7 @@ const Navbar = () => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <Menu.Items className="absolute right-0 top-18 sm:top-20 justify-items-end w-full pt-6 pb-20 bg-background grid grid-flow-row gap-y-4 max-h-screen overflow-scroll overflow-x-hidden">
+      <Menu.Items className="absolute right-0 top-18 md:top-20 justify-items-end w-full pt-6 pb-24 bg-background grid grid-flow-row gap-y-4 max-h-screen overflow-scroll overflow-x-hidden">
         <Menu.Item>
           <NavLink className="mr-5" text="harfen" link="harfen" />
         </Menu.Item>
