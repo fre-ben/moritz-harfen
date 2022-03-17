@@ -33,3 +33,9 @@
   width: 577px;
   height: 400px;
 }
+
+/* Targets image size for fullscreen mode */
+.fullscreen .image-gallery-slide .image-gallery-image {
+  width: 100vw;
+  height: 100vh;
+}
