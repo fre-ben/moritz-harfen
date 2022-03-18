@@ -16,6 +16,7 @@ import harps6 from "../../images/harfen/index/Export-6.jpg";
 import harps7 from "../../images/harfen/index/Export-7.jpg";
 import harps8 from "../../images/harfen/index/Export-8.jpg";
 import harps9 from "../../images/harfen/index/Export-9.jpg";
+import { shuffleArray } from "../../lib/helpers";
 
 function Harfen() {
   const harpImages: ReactImageGalleryItem[] = [
@@ -56,6 +57,9 @@ function Harfen() {
       originalClass: "cursor-default",
     },
   ];
+
+  // Shuffles harpImages on pageload
+  shuffleArray(harpImages);
 
   return (
     <Layout>
