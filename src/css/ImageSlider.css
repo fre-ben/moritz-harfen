@@ -14,3 +14,28 @@
 .image-gallery-icon:hover {
   color: #ff4d2f;
 }
+
+/* Targets arrows */
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 70px;
+}
+
+/* Targets fullscreen button */
+.image-gallery-fullscreen-button .image-gallery-svg,
+.image-gallery-play-button .image-gallery-svg {
+  height: 24px;
+  width: 24px;
+}
+
+/* Targets image size */
+.image-gallery-slide .image-gallery-image {
+  width: 577px;
+  height: 400px;
+}
+
+/* Targets image size for fullscreen mode */
+.fullscreen .image-gallery-slide .image-gallery-image {
+  width: 100vw;
+  height: 100vh;
+}

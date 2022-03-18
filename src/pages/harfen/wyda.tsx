@@ -4,11 +4,12 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
 import ImageSlider from "../../components/imageslider/ImageSlider";
 import { ReactImageGalleryItem } from "react-image-gallery";
-import wyda1 from "../../images/harfen/wyda1.jpg";
-import wyda2 from "../../images/harfen/wyda2.jpg";
-import wyda3 from "../../images/harfen/wyda3.jpg";
-import wyda4 from "../../images/harfen/wyda4.jpg";
 import { Helmet } from "react-helmet";
+
+import wyda1 from "../../images/harfen/wyda/wyda1.jpg";
+import wyda2 from "../../images/harfen/wyda/wyda2.jpg";
+import wyda3 from "../../images/harfen/wyda/wyda3.jpg";
+import wyda4 from "../../images/harfen/wyda/wyda4.jpg";
 
 function Wyda() {
   const wydaImages: ReactImageGalleryItem[] = [

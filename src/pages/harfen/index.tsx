@@ -6,12 +6,17 @@ import Content from "../../components/Content";
 import ImageSlider from "../../components/imageslider/ImageSlider";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
-import harps1 from "../../images/harfen/harps1.jpg";
-import harps2 from "../../images/harfen/harps2.jpg";
-import harps3 from "../../images/harfen/harps3.jpg";
-import harps4 from "../../images/harfen/harps4.jpg";
-import harps7 from "../../images/harfen/harps7.jpg";
-import harps8 from "../../images/harfen/harps8.jpg";
+
+import harps1 from "../../images/harfen/index/Export-1.jpg";
+import harps2 from "../../images/harfen/index/Export-2.jpg";
+import harps3 from "../../images/harfen/index/Export-3.jpg";
+import harps4 from "../../images/harfen/index/Export-4.jpg";
+import harps5 from "../../images/harfen/index/Export-5.jpg";
+import harps6 from "../../images/harfen/index/Export-6.jpg";
+import harps7 from "../../images/harfen/index/Export-7.jpg";
+import harps8 from "../../images/harfen/index/Export-8.jpg";
+import harps9 from "../../images/harfen/index/Export-9.jpg";
+import { shuffleArray } from "../../lib/helpers";
 
 function Harfen() {
   const harpImages: ReactImageGalleryItem[] = [
@@ -32,6 +37,14 @@ function Harfen() {
       originalClass: "cursor-default",
     },
     {
+      original: harps5,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps6,
+      originalClass: "cursor-default",
+    },
+    {
       original: harps7,
       originalClass: "cursor-default",
     },
@@ -39,7 +52,14 @@ function Harfen() {
       original: harps8,
       originalClass: "cursor-default",
     },
+    {
+      original: harps9,
+      originalClass: "cursor-default",
+    },
   ];
+
+  // Shuffles harpImages on pageload
+  shuffleArray(harpImages);
 
   return (
     <Layout>
