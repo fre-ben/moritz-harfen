@@ -12,7 +12,7 @@ import isabeau3 from "../../images/harfen/isabeau/Export-0124.jpg";
 import isabeau4 from "../../images/harfen/isabeau/Export-0184.jpg";
 
 function Isabeau() {
-  const isabeuImages: ReactImageGalleryItem[] = [
+  const isabeauImages: ReactImageGalleryItem[] = [
     {
       original: isabeau1,
       originalClass: "cursor-default",
@@ -54,7 +54,7 @@ function Isabeau() {
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">
-          <ImageSlider images={isabeuImages} />
+          <ImageSlider images={isabeauImages} />
         </div>
         <div className="md:w-10/12 lg:w-10/12">
           <p className="mb-5 lg:w-9/12 text-lg">
