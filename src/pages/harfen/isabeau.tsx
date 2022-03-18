@@ -1,10 +1,36 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { ReactImageGalleryItem } from "react-image-gallery";
 import Content from "../../components/Content";
+import ImageSlider from "../../components/imageslider/ImageSlider";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
 
+import isabeau1 from "../../images/harfen/isabeau/Export-0102.jpg";
+import isabeau2 from "../../images/harfen/isabeau/Export-0105.jpg";
+import isabeau3 from "../../images/harfen/isabeau/Export-0124.jpg";
+import isabeau4 from "../../images/harfen/isabeau/Export-0184.jpg";
+
 function Isabeau() {
+  const isabeuImages: ReactImageGalleryItem[] = [
+    {
+      original: isabeau1,
+      originalClass: "cursor-default",
+    },
+    {
+      original: isabeau2,
+      originalClass: "cursor-default",
+    },
+    {
+      original: isabeau3,
+      originalClass: "cursor-default",
+    },
+    {
+      original: isabeau4,
+      originalClass: "cursor-default",
+    },
+  ];
+
   const headline = (
     <div className="grid grid-flow-row gap-y-2 md:gap-y-0 md:grid-flow-col md:justify-start md:gap-x-3">
       <span>isabeau</span>
@@ -27,7 +53,9 @@ function Isabeau() {
       />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
-        <p>Fotos der Harfe folgen bald.</p>
+        <div className="lg:pl-20 sm:pl-0">
+          <ImageSlider images={isabeuImages} />
+        </div>
         <div className="md:w-10/12 lg:w-10/12">
           <p className="mb-5 lg:w-9/12 text-lg">
             Die kleine Harfe - ideal für Einsteiger:innen, für unterwegs und
