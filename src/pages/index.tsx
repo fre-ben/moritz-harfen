@@ -6,6 +6,7 @@ import Content from "../components/Content";
 import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer";
 import { Helmet } from "react-helmet";
 import newLogo from "../images/new_logo.svg";
+import Instagram from "../components/social/Instagram";
 
 const IndexPage = () => {
   return (
@@ -42,6 +43,7 @@ const IndexPage = () => {
             <ButtonLink destination="kontakt" label="Kontakt" primary={true} />
           </div>
         </div>
+        <Instagram />
         <LeaderDisclaimer />
       </Content>
     </Layout>
