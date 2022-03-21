@@ -7,7 +7,7 @@ function Instagram() {
         target="_blank"
         rel="noreferrer"
         href="https://www.instagram.com/moritz_harfen/"
-        className="flex flex-col items-start sm:items-center gap-y-2"
+        className="flex flex-col items-center gap-y-2"
         title="Link zu moritz harfen auf Instagram"
       >
         <svg
