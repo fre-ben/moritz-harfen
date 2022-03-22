@@ -7,8 +7,11 @@ import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer";
 import { Helmet } from "react-helmet";
 import newLogo from "../images/new_logo.svg";
 import Instagram from "../components/social/Instagram";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 const IndexPage = () => {
+  const intl = useIntl();
+
   return (
     <Layout>
       <Helmet
@@ -33,11 +36,12 @@ const IndexPage = () => {
             backgroundSize: "contain",
           }}
         >
-          <p className="text-xl md:text-3xl mb-5 w-full text-left sm:text-center">
-            Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund
-            <br />– ehemals <strong>„Atelier für keltische Harfen“</strong> von
-            Albrecht Nüchter.
-          </p>
+          <p
+            className="text-xl md:text-3xl mb-5 w-full text-left sm:text-center"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "index.welcome" }),
+            }}
+          ></p>
           <div className="grid grid-flow-col auto-cols-min place-items-center gap-x-16 sm:gap-x-20 lg:gap-x-40">
             <ButtonLink destination="harfen" label="Harfen" primary={true} />
             <ButtonLink destination="kontakt" label="Kontakt" primary={true} />
