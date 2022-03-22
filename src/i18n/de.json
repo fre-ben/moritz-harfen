@@ -1,0 +1,25 @@
+{
+  "index": {
+    "welcome": "Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund <br />– ehemals <strong>„Atelier für keltische Harfen“</strong> von Albrecht Nüchter.",
+    "meta": {
+      "title": "moritz harfen",
+      "content": "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund"
+    }
+  },
+  "navigation": {
+    "harfen": "harfen",
+    "fiona": "fiona (36 Saiten)",
+    "wyda": "wyda (34 Saiten)",
+    "isabeau": "isabeau (29 Saiten)",
+    "leihharfen": "leihharfen",
+    "zubehör": "zubehör",
+    "werkstatt": "werkstatt",
+    "kontakt": "kontakt"
+  },
+  "instagram": "moritz harfen auf Instagram",
+  "leaderDisclaimer": {
+    "eu": "Die Weiterführung dieser Werkstatt wird gefördert durch: <br />Europäischer Landwirtschaftsfonds für die Entwicklung des ländlichen Raums: <br />Hier investiert Europa in die ländlichen Gebiete.",
+    "hessen": " Mitfinanziert durch das Land Hessen im Rahmen des <br />Entwicklungsplans für den ländlichen Raum des Landes Hessen 2014-2020"
+  },
+  "impressum": "Impressum"
+}
