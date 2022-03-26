@@ -19,8 +19,7 @@ const IndexPage = () => {
         meta={[
           {
             name: "description",
-            content:
-              "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund",
+            content: intl.formatMessage({ id: "index.meta.content" }),
           },
         ]}
         htmlAttributes={{ lang: "de" }}
@@ -43,8 +42,16 @@ const IndexPage = () => {
             }}
           ></p>
           <div className="grid grid-flow-col auto-cols-min place-items-center gap-x-16 sm:gap-x-20 lg:gap-x-40">
-            <ButtonLink destination="harfen" label="Harfen" primary={true} />
-            <ButtonLink destination="kontakt" label="Kontakt" primary={true} />
+            <ButtonLink
+              destination="harfen"
+              label={intl.formatMessage({ id: "navigation.harfen" })}
+              primary={true}
+            />
+            <ButtonLink
+              destination="kontakt"
+              label={intl.formatMessage({ id: "navigation.kontakt" })}
+              primary={true}
+            />
           </div>
         </div>
         <Instagram />
