@@ -38,6 +38,18 @@
     "text": "Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen, Saiten und Stimmschlüssel.",
     "bestellung": "Bestellungen - vor allem von Saiten - <br />am besten per E-Mail "
   },
+  "kontakt": {
+    "meta": {
+      "title": "kontakt | moritz harfen",
+      "content": "Kontaktinformationen und Impressum von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "kontakt",
+    "telefon": "Telefon",
+    "termine": "Termine nur nach Vereinbarung!",
+    "anfahrt_hl": "Anfahrt",
+    "anfahrt_text": "Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld <br /> Buslinien: 385 von Neukirchen nach Kruspis oder Linie 365 von Bad Hersfeld nach Kruspis. <br /> Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis Neukirchen)",
+    "webseite": "Webseite erstellt von"
+  },
   "navigation": {
     "harfen": "harfen",
     "fiona": "fiona (36 Saiten)",
