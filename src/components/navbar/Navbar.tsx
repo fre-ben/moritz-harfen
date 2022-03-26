@@ -5,16 +5,34 @@ import NavLink from "./NavLink";
 import BurgermenuButton from "../button/BurgermenuButton";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 const Navbar = () => {
+  const intl = useIntl();
+
   const DesktopNavItems = (
     <>
-      <NavLinkDropdown text="harfen" link="/harfen" />
-      <NavLink text="leihharfen" link="leihharfen" />
-      <NavLink text="zubehör" link="zubehoer" />
-      <NavLink text="werkstatt" link="werkstatt" />
+      <NavLinkDropdown
+        text={intl.formatMessage({ id: "navigation.harfen" })}
+        link="/harfen"
+      />
+      <NavLink
+        text={intl.formatMessage({ id: "navigation.leihharfen" })}
+        link="leihharfen"
+      />
+      <NavLink
+        text={intl.formatMessage({ id: "navigation.zubehör" })}
+        link="zubehoer"
+      />
+      <NavLink
+        text={intl.formatMessage({ id: "navigation.werkstatt" })}
+        link="werkstatt"
+      />
       {/* <NavLink text="vita" link="vita" /> */}
-      <NavLink text="kontakt" link="kontakt" />
+      <NavLink
+        text={intl.formatMessage({ id: "navigation.kontakt" })}
+        link="kontakt"
+      />
     </>
   );
 
@@ -30,7 +48,11 @@ const Navbar = () => {
     >
       <Menu.Items className="absolute right-0 top-18 md:top-20 justify-items-end w-full pt-6 pb-24 bg-background grid grid-flow-row gap-y-4 max-h-screen overflow-scroll overflow-x-hidden">
         <Menu.Item>
-          <NavLink className="mr-5" text="harfen" link="harfen" />
+          <NavLink
+            className="mr-5"
+            text={intl.formatMessage({ id: "navigation.harfen" })}
+            link="harfen"
+          />
         </Menu.Item>
         <Menu.Item>
           <NavLink className="mr-5" text="fiona" link="harfen/fiona" />
@@ -42,19 +64,35 @@ const Navbar = () => {
           <NavLink className="mr-5" text="isabeau" link="harfen/isabeau" />
         </Menu.Item>
         <Menu.Item>
-          <NavLink className="mr-5" text="leihharfen" link="leihharfen" />
+          <NavLink
+            className="mr-5"
+            text={intl.formatMessage({ id: "navigation.leihharfen" })}
+            link="leihharfen"
+          />
         </Menu.Item>
         <Menu.Item>
-          <NavLink className="mr-5" text="zubehör" link="zubehoer" />
+          <NavLink
+            className="mr-5"
+            text={intl.formatMessage({ id: "navigation.zubehör" })}
+            link="zubehoer"
+          />
         </Menu.Item>
         <Menu.Item>
-          <NavLink className="mr-5" text="werkstatt" link="werkstatt" />
+          <NavLink
+            className="mr-5"
+            text={intl.formatMessage({ id: "navigation.werkstatt" })}
+            link="werkstatt"
+          />
         </Menu.Item>
         {/* <Menu.Item>
           <NavLink text="vita" link="vita" />
         </Menu.Item> */}
         <Menu.Item>
-          <NavLink className="mr-5" text="kontakt" link="kontakt" />
+          <NavLink
+            className="mr-5"
+            text={intl.formatMessage({ id: "navigation.kontakt" })}
+            link="kontakt"
+          />
         </Menu.Item>
       </Menu.Items>
     </Transition>

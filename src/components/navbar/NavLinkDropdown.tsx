@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import { useState } from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 type NavLinkProps = {
   text: string;
@@ -8,6 +9,8 @@ type NavLinkProps = {
 };
 
 const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
+  const intl = useIntl();
+
   const [showDropDown, setshowDropDown] = useState(false);
 
   const menuItemStyle =
@@ -17,13 +20,19 @@ const NavLinkDropdown = ({ text, link }: NavLinkProps) => {
   const dropDownMenu = (
     <div className="absolute bg-background md:ml-2 lg:ml-7 pb-3">
       <p className={menuItemStyle}>
-        <Link to="/harfen/fiona">fiona (36 Saiten)</Link>
+        <Link to="/harfen/fiona">
+          {intl.formatMessage({ id: "navigation.fiona" })}
+        </Link>
       </p>
       <p className={menuItemStyle}>
-        <Link to="/harfen/wyda">wyda (34 Saiten)</Link>
+        <Link to="/harfen/wyda">
+          {intl.formatMessage({ id: "navigation.wyda" })}
+        </Link>
       </p>
       <p className={menuItemStyle}>
-        <Link to="/harfen/isabeau">isabeau (29 Saiten)</Link>
+        <Link to="/harfen/isabeau">
+          {intl.formatMessage({ id: "navigation.isabeau" })}
+        </Link>
       </p>
     </div>
   );
