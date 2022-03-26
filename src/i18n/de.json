@@ -29,6 +29,15 @@
     "image_alt_2": "Albrecht und Claudia stehen zusammen",
     "image_alt_3": "Holz"
   },
+  "zubehör": {
+    "meta": {
+      "title": "zubehör | moritz harfen",
+      "content": "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "zubehör",
+    "text": "Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen, Saiten und Stimmschlüssel.",
+    "bestellung": "Bestellungen - vor allem von Saiten - <br />am besten per E-Mail "
+  },
   "navigation": {
     "harfen": "harfen",
     "fiona": "fiona (36 Saiten)",
@@ -39,8 +48,10 @@
     "werkstatt": "werkstatt",
     "kontakt": "kontakt"
   },
-  "instagram": "moritz harfen auf Instagram",
-  "instagram_title": "Link zu moritz harfen auf Instagram",
+  "instagram": {
+    "text": "moritz harfen auf Instagram",
+    "title": "Link zu moritz harfen auf Instagram"
+  },
   "leaderDisclaimer": {
     "eu": "Die Weiterführung dieser Werkstatt wird gefördert durch: <br />Europäischer Landwirtschaftsfonds für die Entwicklung des ländlichen Raums: <br />Hier investiert Europa in die ländlichen Gebiete.",
     "hessen": " Mitfinanziert durch das Land Hessen im Rahmen des <br />Entwicklungsplans für den ländlichen Raum des Landes Hessen 2014-2020"

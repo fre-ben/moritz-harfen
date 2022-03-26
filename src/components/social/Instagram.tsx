@@ -11,7 +11,7 @@ function Instagram() {
         rel="noreferrer"
         href="https://www.instagram.com/moritz_harfen/"
         className="flex flex-col items-center gap-y-2"
-        title={intl.formatMessage({ id: "instagram_title" })}
+        title={intl.formatMessage({ id: "instagram.title" })}
       >
         <svg
           width="64"
@@ -38,7 +38,7 @@ function Instagram() {
             fill="currentColor"
           />
         </svg>
-        <p>{intl.formatMessage({ id: "instagram" })}</p>
+        <p>{intl.formatMessage({ id: "instagram.text" })}</p>
       </a>
     </section>
   );
