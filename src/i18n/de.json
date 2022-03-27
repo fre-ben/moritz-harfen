@@ -59,7 +59,35 @@
     "text": "In dieser Werkstatt entstehen handgefertigte Harfen aus ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und langjährige Erfahrung garantieren höchste Spielfreude – von der großen 36-saitigen Harfe bis zur kleinen 29-saitigen. <br /> <br /> Preise auf Anfrage.",
     "fiona": "(36 Saiten)",
     "wyda": "(34 Saiten)",
-    "isabeau": "(29 Saiten)"
+    "isabeau": "(29 Saiten)",
+    "saiten": "Saiten:",
+    "höhe": "Höhe:",
+    "gewicht": "Gewicht:",
+    "circa": "ca."
+  },
+  "fiona": {
+    "meta": {
+      "title": "fiona (36 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Fiona (36 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(36 Saiten)",
+    "text": "Mit 36 Saiten und einer Größe von etwa 140 cm ist das Modell \"Fiona\" das größte in der Reihe. <br /> Voller Klang und große Tragweite machen es zu einem hervorragenden Konzertinstrument."
+  },
+  "isabeau": {
+    "meta": {
+      "title": "isabeau (29 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Isabeau (29 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(29 Saiten)",
+    "text": "Die kleine Harfe - ideal für Einsteiger:innen, für unterwegs und alle, die ein handliches Instrument suchen."
+  },
+  "wyda": {
+    "meta": {
+      "title": "wyda (34 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(34 Saiten)",
+    "text": "Die Mittlere von Albrecht Nüchters Harfen: <br /> Voller Klang und großer Saitenumfang in einer handlicheren Größe."
   },
   "navigation": {
     "harfen": "harfen",
