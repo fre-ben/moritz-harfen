@@ -1,7 +1,6 @@
-import { Link } from "gatsby-plugin-react-intl";
+import { Link, useIntl } from "gatsby-plugin-react-intl";
 import * as React from "react";
 import { useState } from "react";
-import { useIntl } from "gatsby-plugin-react-intl";
 
 type NavLinkProps = {
   text: string;
