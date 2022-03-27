@@ -22,7 +22,7 @@ const IndexPage = () => {
             content: intl.formatMessage({ id: "index.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content flow="row" headline="">

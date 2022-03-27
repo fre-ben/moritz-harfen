@@ -19,7 +19,7 @@ function Kontakt() {
             content: intl.formatMessage({ id: "kontakt.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content

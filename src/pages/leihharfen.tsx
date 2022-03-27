@@ -29,7 +29,7 @@ const Leihharfen = () => {
             content: intl.formatMessage({ id: "leihharfen.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content

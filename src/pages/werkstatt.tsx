@@ -19,7 +19,7 @@ function Werkstatt() {
             content: intl.formatMessage({ id: "werkstatt.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content

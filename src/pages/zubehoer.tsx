@@ -38,7 +38,7 @@ function Zubehoer() {
             content: intl.formatMessage({ id: "zubehör.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content
