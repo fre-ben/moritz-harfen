@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import ImageSlider from "../../components/imageslider/ImageSlider";
 import { ReactImageGalleryItem } from "react-image-gallery";
 import { Helmet } from "react-helmet";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 import wyda1 from "../../images/harfen/wyda/wyda1.jpg";
 import wyda2 from "../../images/harfen/wyda/wyda2.jpg";
@@ -12,6 +13,8 @@ import wyda3 from "../../images/harfen/wyda/wyda3.jpg";
 import wyda4 from "../../images/harfen/wyda/wyda4.jpg";
 
 function Wyda() {
+  const intl = useIntl();
+
   const wydaImages: ReactImageGalleryItem[] = [
     {
       original: wyda1,
@@ -34,22 +37,21 @@ function Wyda() {
   const headline = (
     <div className="grid grid-flow-row gap-y-2 md:gap-y-0 md:grid-flow-col md:justify-start md:gap-x-3">
       <span>wyda</span>
-      <span>(34 Saiten)</span>
+      <span>{intl.formatMessage({ id: "wyda.headline" })}</span>
     </div>
   );
 
   return (
     <Layout>
       <Helmet
-        title="wyda (34 Saiten) | moritz harfen"
+        title={intl.formatMessage({ id: "wyda.meta.title" })}
         meta={[
           {
             name: "description",
-            content:
-              "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund",
+            content: intl.formatMessage({ id: "wyda.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
@@ -57,23 +59,28 @@ function Wyda() {
           <ImageSlider images={wydaImages} />
         </div>
         <div className="md:w-10/12 lg:w-10/12">
-          <p className="mb-5 w-11/12 text-lg">
-            Die Mittlere von Albrecht Nüchters Harfen:
-            <br />
-            Voller Klang und großer Saitenumfang in einer handlicheren Größe.
-          </p>
+          <p
+            className="mb-5 w-11/12 text-lg"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "wyda.text" }),
+            }}
+          />
           <table className="text-lg">
             <tr>
-              <td>Saiten:</td>
+              <td>{intl.formatMessage({ id: "harfen.saiten" })}</td>
               <td className="pl-3">34 (a&lsquo;&lsquo;&lsquo;-C)</td>
             </tr>
             <tr>
-              <td>Höhe:</td>
-              <td className="pl-3">ca. 118cm</td>
+              <td>{intl.formatMessage({ id: "harfen.höhe" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "harfen.circa" })} 118cm
+              </td>
             </tr>
             <tr>
-              <td>Gewicht:</td>
-              <td className="pl-3">ca. 7 kg</td>
+              <td>{intl.formatMessage({ id: "harfen.gewicht" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "harfen.circa" })} 7 kg
+              </td>
             </tr>
           </table>
         </div>

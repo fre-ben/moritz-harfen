@@ -8,8 +8,11 @@ import saiten from "../images/zubehoer/Saiten.jpg";
 import stimmschluessel from "../images/zubehoer/Stimmschluessel.jpg";
 import taschen from "../images/zubehoer/Taschen.jpg";
 import { Helmet } from "react-helmet";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 function Zubehoer() {
+  const intl = useIntl();
+
   const zubehoerImages: ReactImageGalleryItem[] = [
     {
       original: saiten,
@@ -28,36 +31,44 @@ function Zubehoer() {
   return (
     <Layout>
       <Helmet
-        title="zubehör | moritz harfen"
+        title={intl.formatMessage({ id: "zubehör.meta.title" })}
         meta={[
           {
             name: "description",
-            content:
-              "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund",
+            content: intl.formatMessage({ id: "zubehör.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
-      <Content className="lg:grid-flow-col" flow="col" headline="zubehör">
+      <Content
+        className="lg:grid-flow-col"
+        flow="col"
+        headline={intl.formatMessage({ id: "zubehör.headline" })}
+      >
         <div className="lg:pl-20 sm:pl-0">
           <ImageSlider images={zubehoerImages} />
         </div>
         <div className="md:w-11/12 lg:w-10/12">
           <p className="mb-5 w-11/12 text-lg">
-            Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen,
-            Saiten und Stimmschlüssel.
+            {intl.formatMessage({ id: "zubehör.text" })}
           </p>
           <p className="mb-5 w-11/12 text-lg">
-            Bestellungen - vor allem von Saiten - <br />
-            am besten per E-Mail (
-            <a
-              href="mailto:moritz-harfen@posteo.de"
-              className="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
-            >
-              moritz-harfen@posteo.de
-            </a>
-            ).
+            <span
+              dangerouslySetInnerHTML={{
+                __html: intl.formatMessage({ id: "zubehör.bestellung" }),
+              }}
+            />
+            <span>
+              (
+              <a
+                href="mailto:moritz-harfen@posteo.de"
+                className="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
+              >
+                moritz-harfen@posteo.de
+              </a>
+              ).
+            </span>
           </p>
         </div>
       </Content>

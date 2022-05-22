@@ -1,0 +1,111 @@
+{
+  "index": {
+    "welcome": "Willkommen auf der Seite der Harfenbauwerkstatt Moritz Dortmund <br />– ehemals <strong>„Atelier für keltische Harfen“</strong> von Albrecht Nüchter.",
+    "meta": {
+      "title": "moritz harfen",
+      "content": "Startseite/Landingpage von der Harfenbauwerkstatt Moritz Dortmund"
+    }
+  },
+  "leihharfen": {
+    "meta": {
+      "title": "leihharfen | moritz harfen",
+      "content": "Leihharfen service informationen von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "leihharfen",
+    "leihen": "Sie möchten eine Harfe leihen? Bei uns finden Sie eine große Auswahl an Harfen in den unterschiedlichsten Größen und Ausführungen. <br />Für den Einstieg ins Harfenspiel, einen Spielkurs oder einfach zum Ausprobieren - für jede Gelegenheit das passende Instrument.",
+    "anfragen": "Anfragen bitte telefonisch oder per E-Mail.",
+    "kontakt": "Kontakt"
+  },
+  "werkstatt": {
+    "meta": {
+      "title": "werkstatt | moritz harfen",
+      "content": "Informationen zur Werkstatt und Historie von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "werkstatt",
+    "text_1": "Die Harfenbauwerkstatt \"Atelier für keltische Harfen\" wurde 1990 von Albrecht Nüchter im hessischen Rimbach gegründet. Fast drei Jahrzehnte lang fertigte Albrecht keltische Hakenharfen in Handarbeit. Er entwarf eigene Modelle und entwickelte sie über die Jahre in Zusammenarbeit mit Musiker:innen immer weiter. Mehrere hundert Instrumente sind in dieser Werkstatt, die Anfang der 2000er Jahre ins nahegelegene Haunetal umzog, entstanden. Dabei wurde er von seiner Frau Claudia Uecker unterstützt.",
+    "text_2": "Am 4.4.2018 verstarb Albrecht und eine Nachfolge war zunächst ungewiss. Im Jahr 2021 wurde die Werkstatt von dem Instrumentenbauer Moritz Dortmund übernommen. Moritz hat das Schreinerhandwerk in Berchtesgaden und anschließend das Instrumentenbauhandwerk in Mittenwald gelernt und war dreieinhalb Jahre als Wandergeselle auf traditioneller Wanderschaft. Auf der Wanderschaft lernte Moritz das \"Atelier für keltische Harfen\" kennen und entschloss sich dazu, die Werkstatt zu übernehmen, während Claudia das Leihharfengeschäft weiterführt.",
+    "text_3": "So wird Albrecht Nüchters Fackel weitergetragen und es entstehen in dieser Werkstatt weiterhin hochwertige, handwerklich gefertigte Harfen. Die Instrumente werden ausschließlich aus heimischen Hölzern gefertigt. Neben der hohen Qualität der Harfen spielt auch nachhaltiges Wirtschaften stets eine große Rolle. Es werden nicht nur die Harfen stetig weiterentwickelt, sondern auch die Produktion optimiert. Um Ressourcen zu schonen und uneingeschränkte Spielfreude zu garantieren.",
+    "image_alt_1": "werkstatt",
+    "image_alt_2": "Albrecht und Claudia stehen zusammen",
+    "image_alt_3": "Holz"
+  },
+  "zubehör": {
+    "meta": {
+      "title": "zubehör | moritz harfen",
+      "content": "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "zubehör",
+    "text": "Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen, Saiten und Stimmschlüssel.",
+    "bestellung": "Bestellungen - vor allem von Saiten - <br />am besten per E-Mail "
+  },
+  "kontakt": {
+    "meta": {
+      "title": "kontakt | moritz harfen",
+      "content": "Kontaktinformationen und Impressum von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "kontakt",
+    "telefon": "Telefon",
+    "termine": "Termine nur nach Vereinbarung!",
+    "anfahrt_hl": "Anfahrt",
+    "anfahrt_text": "Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld <br /> Buslinien: 385 von Neukirchen nach Kruspis oder Linie 365 von Bad Hersfeld nach Kruspis. <br /> Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis Neukirchen)",
+    "webseite": "Webseite erstellt von"
+  },
+  "harfen": {
+    "meta": {
+      "title": "harfen | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu den Harfen von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "harfen",
+    "text": "In dieser Werkstatt entstehen handgefertigte Harfen aus ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und langjährige Erfahrung garantieren höchste Spielfreude – von der großen 36-saitigen Harfe bis zur kleinen 29-saitigen. <br /> <br /> Preise auf Anfrage.",
+    "fiona": "(36 Saiten)",
+    "wyda": "(34 Saiten)",
+    "isabeau": "(29 Saiten)",
+    "saiten": "Saiten:",
+    "höhe": "Höhe:",
+    "gewicht": "Gewicht:",
+    "circa": "ca."
+  },
+  "fiona": {
+    "meta": {
+      "title": "fiona (36 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Fiona (36 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(36 Saiten)",
+    "text": "Mit 36 Saiten und einer Größe von etwa 140 cm ist das Modell \"Fiona\" das größte in der Reihe. <br /> Voller Klang und große Tragweite machen es zu einem hervorragenden Konzertinstrument."
+  },
+  "isabeau": {
+    "meta": {
+      "title": "isabeau (29 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Isabeau (29 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(29 Saiten)",
+    "text": "Die kleine Harfe - ideal für Einsteiger:innen, für unterwegs und alle, die ein handliches Instrument suchen."
+  },
+  "wyda": {
+    "meta": {
+      "title": "wyda (34 Saiten) | moritz harfen",
+      "content": "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
+    },
+    "headline": "(34 Saiten)",
+    "text": "Die Mittlere von Albrecht Nüchters Harfen: <br /> Voller Klang und großer Saitenumfang in einer handlicheren Größe."
+  },
+  "navigation": {
+    "harfen": "harfen",
+    "fiona": "fiona (36 Saiten)",
+    "wyda": "wyda (34 Saiten)",
+    "isabeau": "isabeau (29 Saiten)",
+    "leihharfen": "leihharfen",
+    "zubehör": "zubehör",
+    "werkstatt": "werkstatt",
+    "kontakt": "kontakt"
+  },
+  "instagram": {
+    "text": "moritz harfen auf Instagram",
+    "title": "Link zu moritz harfen auf Instagram"
+  },
+  "leaderDisclaimer": {
+    "eu": "Die Weiterführung dieser Werkstatt wird gefördert durch: <br />Europäischer Landwirtschaftsfonds für die Entwicklung des ländlichen Raums: <br />Hier investiert Europa in die ländlichen Gebiete.",
+    "hessen": " Mitfinanziert durch das Land Hessen im Rahmen des <br />Entwicklungsplans für den ländlichen Raum des Landes Hessen 2014-2020"
+  },
+  "impressum": "Impressum"
+}

@@ -1,7 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 function LeaderDisclaimer() {
+  const intl = useIntl();
+
   return (
     <section className="grid mt-20 gap-y-5 border-highlight border-t border-opacity-50 pt-20">
       <div className="grid sm:grid-cols-leader gap-x-5 items-center gap-y-5">
@@ -13,18 +16,18 @@ function LeaderDisclaimer() {
         >
           <StaticImage
             src="../../images/leader/EU.jpg"
-            alt="placeholder image"
+            alt="Logo EU"
             placeholder="blurred"
             width={150}
             quality={100}
           />
         </a>
-        <p className="justify-self-start">
-          Die Weiterführung dieser Werkstatt wird gefördert durch: <br />
-          Europäischer Landwirtschaftsfonds für die Entwicklung des ländlichen
-          Raums:
-          <br /> Hier investiert Europa in die ländlichen Gebiete.
-        </p>
+        <p
+          className="justify-self-start"
+          dangerouslySetInnerHTML={{
+            __html: intl.formatMessage({ id: "leaderDisclaimer.eu" }),
+          }}
+        />
         <a
           target="_blank"
           rel="noreferrer"
@@ -33,16 +36,17 @@ function LeaderDisclaimer() {
         >
           <StaticImage
             src="../../images/leader/Hessen.png"
-            alt="placeholder image"
+            alt="Logo Hessen"
             placeholder="blurred"
             width={100}
             quality={100}
           />
         </a>
-        <p>
-          Mitfinanziert durch das Land Hessen im Rahmen des <br />
-          Entwicklungsplans für den ländlichen Raum des Landes Hessen 2014-2020
-        </p>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: intl.formatMessage({ id: "leaderDisclaimer.hessen" }),
+          }}
+        />
       </div>
       <div className="grid grid-flow-col gap-x-5 items-center justify-start sm:justify-center">
         <a
@@ -53,7 +57,7 @@ function LeaderDisclaimer() {
         >
           <StaticImage
             src="../../images/leader/LEADER.jpg"
-            alt="placeholder image"
+            alt="Logo Leader"
             placeholder="blurred"
             width={70}
             quality={100}
@@ -62,7 +66,7 @@ function LeaderDisclaimer() {
         <a target="_blank" rel="noreferrer" href="http://eler.hessen.de">
           <StaticImage
             src="../../images/leader/EPLR.jpg"
-            alt="placeholder image"
+            alt="Logo EPLR"
             placeholder="blurred"
             width={62}
             quality={100}

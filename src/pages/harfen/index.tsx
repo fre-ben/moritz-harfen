@@ -6,6 +6,7 @@ import Content from "../../components/Content";
 import ImageSlider from "../../components/imageslider/ImageSlider";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 import harps1 from "../../images/harfen/index/Export-1.jpg";
 import harps2 from "../../images/harfen/index/Export-2.jpg";
@@ -19,6 +20,8 @@ import harps9 from "../../images/harfen/index/Export-9.jpg";
 import { shuffleArray } from "../../lib/helpers";
 
 function Harfen() {
+  const intl = useIntl();
+
   const harpImages: ReactImageGalleryItem[] = [
     {
       original: harps1,
@@ -64,47 +67,47 @@ function Harfen() {
   return (
     <Layout>
       <Helmet
-        title="harfen | moritz harfen"
+        title={intl.formatMessage({ id: "harfen.meta.title" })}
         meta={[
           {
             name: "description",
-            content:
-              "Übersicht, Fotos und Informationen zu den Harfen von der Harfenbauwerkstatt Moritz Dortmund",
+            content: intl.formatMessage({ id: "harfen.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
-      <Content className="lg:grid-flow-col" flow="col" headline="harfen">
+      <Content
+        className="lg:grid-flow-col"
+        flow="col"
+        headline={intl.formatMessage({ id: "harfen.headline" })}
+      >
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
-          <p className="mb-5 w-11/12">
-            In dieser Werkstatt entstehen handgefertigte Harfen aus
-            ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und
-            langjährige Erfahrung garantieren höchste Spielfreude – von der
-            großen 36-saitigen Harfe bis zur kleinen 29-saitigen.
-            <br />
-            <br />
-            Preise auf Anfrage.
-          </p>
+          <p
+            className="mb-5 w-11/12"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "harfen.text" }),
+            }}
+          />
           <div className="grid grid-flow-col gap-x-2 place-items-start w-10/12">
             <ButtonLink
               destination="harfen/fiona"
               label="Fiona"
-              labelSecondary="(36 Saiten)"
+              labelSecondary={intl.formatMessage({ id: "harfen.fiona" })}
               primary={true}
               doublespace={true}
             />
             <ButtonLink
               destination="harfen/wyda"
               label="Wyda"
-              labelSecondary="(34 Saiten)"
+              labelSecondary={intl.formatMessage({ id: "harfen.wyda" })}
               primary={true}
               doublespace={true}
             />
             <ButtonLink
               destination="harfen/isabeau"
               label="Isabeau"
-              labelSecondary="(29 Saiten)"
+              labelSecondary={intl.formatMessage({ id: "harfen.isabeau" })}
               primary={true}
               doublespace={true}
             />

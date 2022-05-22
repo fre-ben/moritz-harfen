@@ -1,6 +1,9 @@
 import React from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 function Instagram() {
+  const intl = useIntl();
+
   return (
     <section className="mt-10">
       <a
@@ -8,7 +11,7 @@ function Instagram() {
         rel="noreferrer"
         href="https://www.instagram.com/moritz_harfen/"
         className="flex flex-col items-center gap-y-2"
-        title="Link zu moritz harfen auf Instagram"
+        title={intl.formatMessage({ id: "instagram.title" })}
       >
         <svg
           width="64"
@@ -35,7 +38,7 @@ function Instagram() {
             fill="currentColor"
           />
         </svg>
-        <p>moritz harfen auf Instagram</p>
+        <p>{intl.formatMessage({ id: "instagram.text" })}</p>
       </a>
     </section>
   );

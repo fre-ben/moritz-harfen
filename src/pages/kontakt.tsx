@@ -4,23 +4,28 @@ import Content from "../components/Content";
 import Layout from "../components/Layout";
 import Legal from "../components/legal/Legal";
 import Navbar from "../components/navbar/Navbar";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 function Kontakt() {
+  const intl = useIntl();
+
   return (
     <Layout>
       <Helmet
-        title="kontakt | moritz harfen"
+        title={intl.formatMessage({ id: "kontakt.meta.title" })}
         meta={[
           {
             name: "description",
-            content:
-              "Kontaktinformationen und Impressum von der Harfenbauwerkstatt Moritz Dortmund",
+            content: intl.formatMessage({ id: "kontakt.meta.content" }),
           },
         ]}
-        htmlAttributes={{ lang: "de" }}
+        htmlAttributes={{ lang: intl.locale || "de" }}
       />
       <Navbar />
-      <Content flow="row" headline="kontakt">
+      <Content
+        flow="row"
+        headline={intl.formatMessage({ id: "kontakt.headline" })}
+      >
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <div className="grid grid-flow-row md:grid-flow-col md:gap-x-20">
             <div className="grid mb-5 md:mb-0 whitespace-nowrap justify-items-center justify-start">
@@ -42,7 +47,7 @@ function Kontakt() {
               36166 Haunetal - Kruspis
             </div>
             <p className="whitespace-nowrap">
-              Telefon: 06673 918 919
+              {intl.formatMessage({ id: "kontakt.telefon" })}: 06673 918 919
               <br />
               E-Mail:{" "}
               <a
@@ -53,23 +58,24 @@ function Kontakt() {
               </a>
             </p>
           </div>
-          <p className="mt-5">Termine nur nach Vereinbarung!</p>
+          <p className="mt-5">
+            {intl.formatMessage({ id: "kontakt.termine" })}
+          </p>
           <div className="mt-5">
-            <h3 className="text-lg font-bold">Anfahrt</h3>
-            <p>
-              Nächstgelegene Bahnhöfe: Neukirchen (Haunetal) oder Bad Hersfeld
-              <br />
-              Buslinien: 385 von Neukirchen nach Kruspis oder Linie 365 von Bad
-              Hersfeld nach Kruspis.
-              <br />
-              Mit dem Auto: A7 Abfahrt Niederaula (89) oder über die B27 (bis
-              Neukirchen)
-            </p>
+            <h3 className="text-lg font-bold">
+              {intl.formatMessage({ id: "kontakt.anfahrt_hl" })}
+            </h3>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: intl.formatMessage({ id: "kontakt.anfahrt_text" }),
+              }}
+            />
           </div>
           <div className="w-40 mt-10 pt-10 border-t-2 border-highlight"></div>
+          {/* TODO: Hier extra englische Legal komponente bauen und conditional rendern */}
           <Legal />
           <p className="mt-10 text-sm text-center">
-            Webseite erstellt von{" "}
+            {intl.formatMessage({ id: "kontakt.webseite" })}{" "}
             <a
               href="https://github.com/fre-ben"
               target="_blank"
