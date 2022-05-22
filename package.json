@@ -2,7 +2,7 @@
   "name": "moritz-harfen",
   "private": true,
   "description": "Website for harp builder Moritz Dortmund",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Frederik Schocke",
   "dependencies": {
     "@headlessui/react": "^1.4.0",
