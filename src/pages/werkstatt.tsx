@@ -52,7 +52,7 @@ function Werkstatt() {
           </div>
           <div className="grid grid-flow-row sm:grid-flow-col gap-y-3 sm:gap-y-0 sm:gap-x-5 items-center">
             <StaticImage
-              src="../images/werkstatt/Werkstatt_2.jpg"
+              src="../images/werkstatt/Werkstatt_2_neu.jpg"
               alt={intl.formatMessage({ id: "werkstatt.image_alt_3" })}
               placeholder="blurred"
               width={400}
