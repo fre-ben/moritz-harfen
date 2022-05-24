@@ -6,8 +6,8 @@ import Content from "../components/Content";
 import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer";
 import { Helmet } from "react-helmet";
 import newLogo from "../images/new_logo.svg";
-import Instagram from "../components/social/Instagram";
 import { useIntl } from "gatsby-plugin-react-intl";
+import Facebook from "../components/social/Facebook";
 
 const IndexPage = () => {
   const intl = useIntl();
@@ -54,7 +54,7 @@ const IndexPage = () => {
             />
           </div>
         </div>
-        <Instagram />
+        <Facebook />
         <LeaderDisclaimer />
       </Content>
     </Layout>
