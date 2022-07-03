@@ -5,7 +5,6 @@ import ButtonLink from "../components/button/ButtonLink";
 import Content from "../components/Content";
 import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer";
 import { Helmet } from "react-helmet";
-import newLogo from "../images/new_logo.svg";
 import { useIntl } from "gatsby-plugin-react-intl";
 import Facebook from "../components/social/Facebook";
 import { StaticImage } from "gatsby-plugin-image";
@@ -33,7 +32,8 @@ const IndexPage = () => {
           layout="constrained"
           height={450}
           className="w-full rounded-lg"
-          formats={["webp"]}
+          quality={100}
+          placeholder="blurred"
         />
         {/* <div
           className="pb-4 pt-4 lg:pb-8 lg:pt-8 w-full rounded-md"
