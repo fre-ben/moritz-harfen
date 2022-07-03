@@ -30,6 +30,7 @@ const IndexPage = () => {
           src="../images/index/header.jpg"
           alt=""
           layout="constrained"
+          width={1200}
           height={450}
           className="w-full rounded-lg"
           quality={100}
