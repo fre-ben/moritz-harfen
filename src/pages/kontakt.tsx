@@ -56,6 +56,8 @@ function Kontakt() {
               >
                 moritz-harfen@posteo.de
               </a>
+              <br />
+              USt-ID: DE341449842
             </p>
           </div>
           <p className="mt-5">
