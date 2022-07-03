@@ -15,7 +15,7 @@ function Content({ children, className, flow, headline }: ContentProps) {
         {headline}
       </h1>
       <div
-        className={`grid pt-5 md:pl-10 lg:pl-0 lg:grid-flow-${flow} items-center md:justify-items-center md:grid-flow-row lg:gap-x-16 gap-y-5 bg-background ${className}`}
+        className={`grid pt-5 lg:grid-flow-${flow} items-center md:justify-items-center md:grid-flow-row lg:gap-x-16 gap-y-5 bg-background ${className}`}
       >
         {children}
       </div>
