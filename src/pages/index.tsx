@@ -53,7 +53,6 @@ const IndexPage = () => {
             primary={true}
           />
         </div>
-        {/* </div> */}
         <Facebook />
         <LeaderDisclaimer />
       </Content>
