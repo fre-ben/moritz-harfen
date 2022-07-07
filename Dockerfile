@@ -8,7 +8,7 @@ COPY ./package-lock.json ./
 
 RUN npm install -g gatsby-cli
 
-RUN npm ci
+RUN npm install
 
 COPY . .
 
