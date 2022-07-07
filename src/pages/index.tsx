@@ -29,22 +29,12 @@ const IndexPage = () => {
         <StaticImage
           src="../images/index/header.jpg"
           alt=""
-          layout="constrained"
-          width={1200}
+          layout="fullWidth"
           height={450}
-          className="w-full rounded-lg"
+          className="w-full rounded-lg max-w-screen-xl"
           quality={100}
           placeholder="blurred"
         />
-        {/* <div
-          className="pb-4 pt-4 lg:pb-8 lg:pt-8 w-full rounded-md"
-          style={{
-            backgroundImage: `linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.8)), url(${newLogo})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        > */}
         <p
           className="text-xl md:text-3xl mb-5 w-full text-left sm:text-center"
           dangerouslySetInnerHTML={{
