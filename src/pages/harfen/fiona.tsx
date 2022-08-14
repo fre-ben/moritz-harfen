@@ -7,10 +7,10 @@ import ImageSlider from "../../components/imageslider/ImageSlider";
 import { ReactImageGalleryItem } from "react-image-gallery";
 import { useIntl } from "gatsby-plugin-react-intl";
 
-import fiona1 from "../../images/harfen/fiona/Export-1.jpg";
-import fiona2 from "../../images/harfen/fiona/Export-2.jpg";
-import fiona3 from "../../images/harfen/fiona/Export-0003.jpg";
-import fiona4 from "../../images/harfen/fiona/Export-1163.jpg";
+import fiona1 from "../../images/harfen/fiona/fiona-1.jpg";
+import fiona2 from "../../images/harfen/fiona/fiona-2.jpg";
+import fiona3 from "../../images/harfen/fiona/fiona-3.jpg";
+import fiona4 from "../../images/harfen/fiona/fiona-4.jpg";
 
 function Fiona() {
   const intl = useIntl();
