@@ -52,7 +52,12 @@ function Isabeau() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link
+          rel="canonical"
+          href="https://www.moritz-harfen.de/harfen/isabeau"
+        />
+      </Helmet>
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">
@@ -77,6 +82,12 @@ function Isabeau() {
               <td>{intl.formatMessage({ id: "harfen.gewicht" })}</td>
               <td className="pl-3">
                 {intl.formatMessage({ id: "harfen.circa" })} 4,5 kg
+              </td>
+            </tr>
+            <tr>
+              <td>{intl.formatMessage({ id: "harfen.preis" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "isabeau.preis" })}
               </td>
             </tr>
           </table>

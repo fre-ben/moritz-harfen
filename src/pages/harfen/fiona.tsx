@@ -52,7 +52,12 @@ function Fiona() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link
+          rel="canonical"
+          href="https://www.moritz-harfen.de/harfen/fiona"
+        />
+      </Helmet>
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">
@@ -80,6 +85,12 @@ function Fiona() {
               <td>{intl.formatMessage({ id: "harfen.gewicht" })}</td>
               <td className="pl-3">
                 {intl.formatMessage({ id: "harfen.circa" })} 10 kg
+              </td>
+            </tr>
+            <tr>
+              <td>{intl.formatMessage({ id: "harfen.preis" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "fiona.preis" })}
               </td>
             </tr>
           </table>

@@ -57,7 +57,9 @@ function Wyda() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/harfen/wyda" />
+      </Helmet>
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">
@@ -85,6 +87,12 @@ function Wyda() {
               <td>{intl.formatMessage({ id: "harfen.gewicht" })}</td>
               <td className="pl-3">
                 {intl.formatMessage({ id: "harfen.circa" })} 7 kg
+              </td>
+            </tr>
+            <tr>
+              <td>{intl.formatMessage({ id: "harfen.preis" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "wyda.preis" })}
               </td>
             </tr>
           </table>

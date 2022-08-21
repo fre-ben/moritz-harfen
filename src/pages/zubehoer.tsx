@@ -39,7 +39,9 @@ function Zubehoer() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/zubehoer" />
+      </Helmet>
       <Navbar />
       <Content
         className="lg:grid-flow-col"

@@ -12,8 +12,8 @@
       "content": "Leihharfen service informationen von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "leihharfen",
-    "leihen": "Sie möchten eine Harfe leihen? Bei uns finden Sie eine große Auswahl an Harfen in den unterschiedlichsten Größen und Ausführungen. <br />Für den Einstieg ins Harfenspiel, einen Spielkurs oder einfach zum Ausprobieren - für jede Gelegenheit das passende Instrument.",
-    "anfragen": "Anfragen bitte telefonisch oder per E-Mail.",
+    "leihen": "Du möchtest eine Harfe leihen? Bei uns findest du eine große Auswahl an Harfen in den unterschiedlichsten Größen und Ausführungen. <br/>Für den Einstieg ins Harfenspiel, einen Spielkurs oder einfach zum Ausprobieren - für jede Gelegenheit das passende Instrument.",
+    "anfragen": "Anfragen am besten per E-Mail.",
     "kontakt": "Kontakt"
   },
   "werkstatt": {
@@ -35,7 +35,7 @@
       "content": "Informationen zum Verkauf von Harfenzubehör von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "zubehör",
-    "text": "Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen, Saiten und Stimmschlüssel.",
+    "text": "Passend zu den Harfen gibt es bei uns hochwertige Transporttaschen, Saiten, Klangpodeste und Stimmschlüssel.",
     "bestellung": "Bestellungen - vor allem von Saiten - <br />am besten per E-Mail "
   },
   "kontakt": {
@@ -56,14 +56,15 @@
       "content": "Übersicht, Fotos und Informationen zu den Harfen von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "harfen",
-    "text": "In dieser Werkstatt entstehen handgefertigte Harfen aus ausgewählten, regionalen Hölzern. Sorgfältige Verarbeitung und langjährige Erfahrung garantieren höchste Spielfreude – von der großen 36-saitigen Harfe bis zur kleinen 29-saitigen. <br /> <br /> Preise auf Anfrage.",
+    "text": "In dieser Werkstatt entstehen handgefertigte Harfen aus ausgewählten, regionalen Hölzern. Die Suche nach dem besonderen Klang und einer ästhetischen Form bestimmen dabei jeden Arbeitsschritt. So entstehen echte Einzelstücke, die sich durch einen eigenen Klangcharakter und leichte Spielbarkeit auszeichnen. Sorgfältige Verarbeitung und langjährige Erfahrung garantieren höchste Spielfreude – von der kleinen 29-Saitigen bis zur großen 36-Saitigen. <br /> <br /> Du suchst eine Harfe aus einer ganz bestimmten Holzart, mit besonderen Verzierungen oder einer speziellen Besaitung? <br/>Kein Problem, die Harfen können in Absprache mit der Kundschaft individuell gestaltet werden. <br /> <br /> Du möchtest eine Harfe probespielen oder hast Fragen zu den Instrumenten? Nimm' Kontakt zu uns auf, wir helfen gerne! ",
     "fiona": "(36 Saiten)",
     "wyda": "(34 Saiten)",
     "isabeau": "(29 Saiten)",
     "saiten": "Saiten:",
     "höhe": "Höhe:",
     "gewicht": "Gewicht:",
-    "circa": "ca."
+    "circa": "ca.",
+    "preis": "Preis:"
   },
   "fiona": {
     "meta": {
@@ -71,7 +72,8 @@
       "content": "Übersicht, Fotos und Informationen zu der Harfe Fiona (36 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "(36 Saiten)",
-    "text": "Mit 36 Saiten und einer Größe von etwa 140 cm ist das Modell \"Fiona\" das größte in der Reihe. <br /> Voller Klang und große Tragweite machen es zu einem hervorragenden Konzertinstrument."
+    "text": "Mit 36 Saiten und einer Größe von etwa 140 cm ist das Modell \"Fiona\" das größte in der Reihe. <br /> Voller, brillanter Klang, kräftige Bässe und leichte Spielbarkeit zeichnen dieses Instrument aus. Mit seiner großen klanglichen Tragweite fühlt sich diese Harfe auch in jedem Ensemble und auf der Bühne wohl.",
+    "preis": "Ab 3.670 € inkl. Camac Halbtonklappen"
   },
   "isabeau": {
     "meta": {
@@ -79,7 +81,8 @@
       "content": "Übersicht, Fotos und Informationen zu der Harfe Isabeau (29 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "(29 Saiten)",
-    "text": "Die kleine Harfe - ideal für Einsteiger:innen, für unterwegs und alle, die ein handliches Instrument suchen."
+    "text": "Die kleine Harfe - ideal für Einsteiger:innen, für die Reise und alle, die ein handliches Instrument suchen. Trotz der kleinen Größe fühlt sich diese Harfe natürlich auch bei der nächsten Session wohl.",
+    "preis": "Ab 2.630 € inkl. Camac Halbtonklappen"
   },
   "wyda": {
     "meta": {
@@ -87,7 +90,8 @@
       "content": "Übersicht, Fotos und Informationen zu der Harfe Wyda (34 Saiten) von der Harfenbauwerkstatt Moritz Dortmund"
     },
     "headline": "(34 Saiten)",
-    "text": "Die Mittlere von Albrecht Nüchters Harfen: <br /> Voller Klang und großer Saitenumfang in einer handlicheren Größe."
+    "text": "Leichte Spielbarkeit und brillanter Klang in einer handlichen Größe. Mit 34 Saiten gut gerüstet für jede musikalische Aufgabe, kannst du dieses Instrument problemlos überall mit hinnehmen. Durch den kräftigen Klang eignet es sich natürlich auch für die nächste Session oder das Ensemblespiel. <br /> <br /> Diese Harfe lässt sich optimal mit einem Klangpodest kombinieren.",
+    "preis": "Ab 3.390 € inkl. Camac Halbtonklappen"
   },
   "navigation": {
     "harfen": "harfen",
@@ -98,10 +102,6 @@
     "zubehör": "zubehör",
     "werkstatt": "werkstatt",
     "kontakt": "kontakt"
-  },
-  "instagram": {
-    "text": "moritz harfen auf Instagram",
-    "title": "Link zu moritz harfen auf Instagram"
   },
   "facebook": {
     "text": "moritz harfen auf Facebook",

@@ -20,7 +20,9 @@ function Kontakt() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/kontakt" />
+      </Helmet>
       <Navbar />
       <Content
         flow="row"
