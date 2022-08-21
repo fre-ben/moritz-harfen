@@ -23,7 +23,9 @@ const IndexPage = () => {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de" />
+      </Helmet>
       <Navbar />
       <Content flow="row" headline="">
         <StaticImage

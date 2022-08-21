@@ -57,7 +57,9 @@ function Wyda() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/harfen/wyda" />
+      </Helmet>
       <Navbar />
       <Content className="lg:grid-flow-col" flow="col" headline={headline}>
         <div className="lg:pl-20 sm:pl-0">

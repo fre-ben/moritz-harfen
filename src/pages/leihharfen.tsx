@@ -30,7 +30,9 @@ const Leihharfen = () => {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/leihharfen" />
+      </Helmet>
       <Navbar />
       <Content
         flow="col"

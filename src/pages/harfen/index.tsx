@@ -80,7 +80,9 @@ function Harfen() {
           },
         ]}
         htmlAttributes={{ lang: intl.locale || "de" }}
-      />
+      >
+        <link rel="canonical" href="https://www.moritz-harfen.de/harfen" />
+      </Helmet>
       <Navbar />
       <Content
         className="lg:grid-flow-col"
