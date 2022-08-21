@@ -8,15 +8,16 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/navbar/Navbar";
 import { useIntl } from "gatsby-plugin-react-intl";
 
-import harps1 from "../../images/harfen/index/Export-1.jpg";
-import harps2 from "../../images/harfen/index/Export-2.jpg";
-import harps3 from "../../images/harfen/index/Export-3.jpg";
-import harps4 from "../../images/harfen/index/Export-4.jpg";
-import harps5 from "../../images/harfen/index/Export-5.jpg";
-import harps6 from "../../images/harfen/index/Export-6.jpg";
-import harps7 from "../../images/harfen/index/Export-7.jpg";
-import harps8 from "../../images/harfen/index/Export-8.jpg";
-import harps9 from "../../images/harfen/index/Export-9.jpg";
+import harps1 from "../../images/harfen/index/harfen-1.jpg";
+import harps2 from "../../images/harfen/index/harfen-2.jpg";
+import harps3 from "../../images/harfen/index/harfen-3.jpg";
+import harps4 from "../../images/harfen/index/harfen-4.jpg";
+import harps5 from "../../images/harfen/index/harfen-5.jpg";
+import harps6 from "../../images/harfen/index/harfen-6.jpg";
+import harps7 from "../../images/harfen/index/harfen-7.jpg";
+import harps8 from "../../images/harfen/index/harfen-8.jpg";
+import harps9 from "../../images/harfen/index/harfen-9.jpg";
+import harps10 from "../../images/harfen/index/harfen-10.jpg";
 import { shuffleArray } from "../../lib/helpers";
 
 function Harfen() {
@@ -57,6 +58,10 @@ function Harfen() {
     },
     {
       original: harps9,
+      originalClass: "cursor-default",
+    },
+    {
+      original: harps10,
       originalClass: "cursor-default",
     },
   ];

@@ -7,10 +7,11 @@ import { ReactImageGalleryItem } from "react-image-gallery";
 import { Helmet } from "react-helmet";
 import { useIntl } from "gatsby-plugin-react-intl";
 
-import wyda1 from "../../images/harfen/wyda/wyda1.jpg";
-import wyda2 from "../../images/harfen/wyda/wyda2.jpg";
-import wyda3 from "../../images/harfen/wyda/wyda3.jpg";
-import wyda4 from "../../images/harfen/wyda/wyda4.jpg";
+import wyda1 from "../../images/harfen/wyda/wyda-1.jpg";
+import wyda2 from "../../images/harfen/wyda/wyda-2.jpg";
+import wyda3 from "../../images/harfen/wyda/wyda-3.jpg";
+import wyda4 from "../../images/harfen/wyda/wyda-4.jpg";
+import wyda5 from "../../images/harfen/wyda/wyda-5.jpg";
 
 function Wyda() {
   const intl = useIntl();
@@ -30,6 +31,10 @@ function Wyda() {
     },
     {
       original: wyda4,
+      originalClass: "cursor-default",
+    },
+    {
+      original: wyda5,
       originalClass: "cursor-default",
     },
   ];
