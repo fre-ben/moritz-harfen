@@ -1,1 +1,115 @@
-{}
+{
+  "index": {
+    "welcome": "Welcome to the website of the harp maker's workshop Moritz Dortmund <br />– formerly <strong>„Atelier für keltische Harfen“</strong> by Albrecht Nüchter.",
+    "meta": {
+      "title": "moritz harps",
+      "content": "Landingpage of the harp maker's workshop moritz dortmund"
+    }
+  },
+  "leihharfen": {
+    "meta": {
+      "title": "rental harps | moritz harps",
+      "content": "rental harps service information by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "rental harps",
+    "leihen": "Looking for a harp to rent? We offer a wide range of different harps of various sizes and configurations.<br /> Whether you are a beginner and want to try it out our you are organising your next harp event, we'll find the right fit for you.",
+    "anfragen": "Requests via e-mail.",
+    "kontakt": "contact"
+  },
+  "werkstatt": {
+    "meta": {
+      "title": "workshop | moritz harps",
+      "content": "Information on the history of the harp maker's workshop moritz dortmund"
+    },
+    "headline": "workshop",
+    "text_1": "The harp maker's workshop \"Atelier für keltische Harfen\" was established in 1990 by Albrecht Nüchter in Rimbach (Hesse, Germany). He designed his own models and tweaked and improved them over the years in collaboration with various musicians. Over the course of three decades he built several hundred harps in his workshop, which moved to the nearby Haunetal in the early 2000s. He was supported by his wife Claudia Uecker.",
+    "text_2": "Albrecht passed away on 4th of April in 2018 and no successor was in sight. In 2021, instrument maker Moritz Dortmund took over the workshop. Moritz completed apprenticeships of both carpentry and instrument making in Berchtesgaden and Mittenwald (both in Bavaria, Germany). Additionally he spent three and a half years on the road as a journeyman, a \"Wandergeselle\" on his traditional \"Walz\". During these years he got to know the \"Atelier für keltische Harfen\" and decided to continue Albrecht's work, while Claudia continues to manage the rental harps.",
+    "text_3": "This way Albrecht's spirit lives on and his workshop continues to produce quality, handmade lever harps - made from regionally harvested wood. Additionally to the high quality standards, sustainability is always a key element. Not only are the harps constantly being improved upon, but the production process itself is being optimized. To save resources and to guarantee unimpeded joy of playing.",
+    "image_alt_1": "werkstatt",
+    "image_alt_2": "Albrecht und Claudia stehen zusammen",
+    "image_alt_3": "Holz"
+  },
+  "zubehör": {
+    "meta": {
+      "title": "accessories | moritz harps",
+      "content": "Information on harp accessories by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "accessories",
+    "text": "We offer a range of tailored accessories for your harp: High quality transport bags, strings, tuning keys and sound boxes.",
+    "bestellung": "Orders preferably via e-mail "
+  },
+  "kontakt": {
+    "meta": {
+      "title": "contact | moritz harps",
+      "content": "contact info and site notice by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "contact",
+    "telefon": "Telephone",
+    "termine": "Visits to the workshop by appointment only!",
+    "anfahrt_hl": "How to get to the workshop:",
+    "anfahrt_text": "Closest train stations: Neukirchen (Haunetal) and Bad Hersfeld<br /> Bus lines: 385 from Neukirchen to Kruspis and 365 from Bad Hersfeld to Kruspis <br /> Via car: Highway A7 exit Niederaula or on the B27 to Neukirchen",
+    "webseite": "website by"
+  },
+  "harfen": {
+    "meta": {
+      "title": "harps | moritz harps",
+      "content": "Overview, photos and info on the harps by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "harps",
+    "text": "In this workshop we build handmade lever harps made from selected, regionally sourced wood. The search for high quality sound and an aesthetic form determine every step of the process. This way we create unique instruments, which offer light playability and their very own sound character. High quality standards and years of experience guarantee highest joy of playing – from the small 29-stringed to the large 36-stringed harp. <br /> <br /> You are looking for a harp made from a specific kind of wood? Or you wish for bespoke ornamentation or special kinds of strings? No problem! The instruments can be customized individually according to your needs. <br /> <br /> You want to try out a harp or you have questions regarding the instruments? Just contact us, we're happy to help you. <br /> <br /> ",
+    "fiona": "(36 strings)",
+    "wyda": "(34 strings)",
+    "isabeau": "(29 strings)",
+    "saiten": "strings:",
+    "höhe": "height:",
+    "gewicht": "weight:",
+    "circa": "approx.",
+    "preis": "price:"
+  },
+  "fiona": {
+    "meta": {
+      "title": "fiona (36 strings) | moritz harps",
+      "content": "Overview, photos and info on the harp fiona (36 strings) by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "(36 strings)",
+    "text": "Outfitted with 36 strings and a height of approx. 140 cm, the model “Fiona” is our largest harp. <br />Strong and brilliant sound, powerful bass and light playability are the key features of this instrument. It carries sound beautifully and is well suited for the stage and every ensemble.",
+    "preis": "Starting at 3.670 € including Camac levers"
+  },
+  "isabeau": {
+    "meta": {
+      "title": "isabeau (29 strings) | moritz harps",
+      "content": "Overview, photos and info on the harp isabeau (29 strings) by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "(29 strings)",
+    "text": "The smallest of our harps. Ideal for beginners and for traveling – and everybody who values a really small form factor. Despite it size it's well suited for solo and session play.",
+    "preis": "Starting at 2.630 € including Camac levers"
+  },
+  "wyda": {
+    "meta": {
+      "title": "wyda (34 strings) | moritz harps",
+      "content": "Overview, photos and info on the harp wyda (34 strings) by the harp maker's workshop moritz dortmund"
+    },
+    "headline": "(34 Saiten)",
+    "text": "Light playability and brilliant sound in a small form factor. Outfitted with 34 strings this harp is well suited for every musical endeavour and you'll be able to easily carry it wherever you go. The powerful sound makes it ideal for the next session or ensemble play. <br /> <br />This harp is ideal for combination with a sound box.",
+    "preis": "Starting at 3.390 € including Camac levers."
+  },
+  "navigation": {
+    "harfen": "harps",
+    "fiona": "fiona (36 strings)",
+    "wyda": "wyda (34 srings)",
+    "isabeau": "isabeau (29 strings)",
+    "leihharfen": "rental harps",
+    "zubehör": "accessories",
+    "werkstatt": "workshop",
+    "kontakt": "contact"
+  },
+  "facebook": {
+    "text": "moritz harfen on Facebook",
+    "title": "Link to moritz harps' facebook page"
+  },
+  "leaderDisclaimer": {
+    "eu": "This workshop is supported by: <br />Europäischer Landwirtschaftsfonds für die Entwicklung des ländlichen Raums: <br />Hier investiert Europa in die ländlichen Gebiete.",
+    "hessen": " Co-financed by Hesse as part of the <br />Entwicklungsplans für den ländlichen Raum des Landes Hessen 2014-2020"
+  },
+  "impressum": "site notice"
+}

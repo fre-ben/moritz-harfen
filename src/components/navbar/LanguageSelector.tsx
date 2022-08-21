@@ -1,12 +1,23 @@
 import * as React from "react";
-import { changeLocale } from "gatsby-plugin-react-intl";
+import { changeLocale, useIntl } from "gatsby-plugin-react-intl";
 
-//TODO: Add layout/styles for this (once Moritz has translations)
 const LanguageSelector = () => {
+  const { locale } = useIntl();
   return (
     <div className="inline text-right whitespace-nowrap lg:mr-3 mt-5">
-      <button onClick={() => changeLocale("de")}>deutsch</button> |{" "}
-      <button onClick={() => changeLocale("en")}>english</button>
+      <button
+        onClick={() => changeLocale("de")}
+        className={locale === "de" ? "font-bold" : ""}
+      >
+        deutsch
+      </button>{" "}
+      |{" "}
+      <button
+        onClick={() => changeLocale("en")}
+        className={locale === "en" ? "font-bold" : ""}
+      >
+        english
+      </button>
     </div>
   );
 };

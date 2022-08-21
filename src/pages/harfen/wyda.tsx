@@ -87,6 +87,12 @@ function Wyda() {
                 {intl.formatMessage({ id: "harfen.circa" })} 7 kg
               </td>
             </tr>
+            <tr>
+              <td>{intl.formatMessage({ id: "harfen.preis" })}</td>
+              <td className="pl-3">
+                {intl.formatMessage({ id: "wyda.preis" })}
+              </td>
+            </tr>
           </table>
         </div>
       </Content>
