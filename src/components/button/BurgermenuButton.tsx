@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState } from "react";
 
 function BurgermenuButton() {
-  //
   const [path, setPath] = useState("M4 6h16M4 12h16M4 18h16");
 
   function changePath() {
