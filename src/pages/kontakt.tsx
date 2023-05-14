@@ -30,18 +30,12 @@ function Kontakt() {
       >
         <div className="lg:pl-20 md:w-7/12 lg:w-9/12">
           <div className="grid grid-flow-row md:grid-flow-col md:gap-x-20">
-            <div className="grid mb-5 md:mb-0 whitespace-nowrap justify-items-center justify-start">
-              <div className="grid grid-flow-col gap-x-12 mb-2">
+            <div className="grid mb-5 md:mb-0 whitespace-nowrap justify-start">
+              <div className="grid grid-flow-col">
                 <p>
                   Harfenbau
                   <br />
                   Moritz Dortmund
-                  <br />
-                </p>
-                <p>
-                  Leihharfen
-                  <br />
-                  Claudia Uecker
                   <br />
                 </p>
               </div>
