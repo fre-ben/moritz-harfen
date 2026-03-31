@@ -1,0 +1,18 @@
+---
+interface Props {
+  headline?: string;
+  flow?: "row" | "col";
+  className?: string;
+}
+const { headline, flow = "row", className = "" } = Astro.props;
+const hasHeadlineSlot = Astro.slots.has("headline");
+---
+
+<h1 class="text-5xl pt-5 mb-10 font-medium md:pl-10 lg:pl-20">
+  {hasHeadlineSlot ? <slot name="headline" /> : headline}
+</h1>
+<div
+  class={`grid pt-5 lg:grid-flow-${flow} items-center md:justify-items-center md:grid-flow-row lg:gap-x-16 gap-y-5 bg-background ${className}`}
+>
+  <slot />
+</div>

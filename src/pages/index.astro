@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Content from "../components/Content.astro";
+import ButtonLink from "../components/button/ButtonLink.astro";
+import LeaderDisclaimer from "../components/leaderDisclaimer/LeaderDisclaimer.astro";
+import { useTranslations } from "../i18n/utils";
+import headerImg from "../images/index/header.jpg";
+
+const t = useTranslations("de");
+---
+
+<Layout
+  title={t("index.meta.title")}
+  description={t("index.meta.content")}
+  lang="de"
+  canonicalPath="/"
+>
+  <Content flow="row" headline="">
+    <Image
+      src={headerImg}
+      alt="Moritz Harfen"
+      width={1200}
+      height={450}
+      quality={100}
+      class="w-full rounded-lg max-w-screen-xl"
+    />
+    <p
+      class="text-xl md:text-3xl mb-5 w-full text-left sm:text-center"
+      set:html={t("index.welcome")}
+    />
+    <div
+      class="grid grid-flow-col auto-cols-min place-content-center gap-x-16 sm:gap-x-20 lg:gap-x-40"
+    >
+      <ButtonLink
+        destination="harfen"
+        label={t("navigation.harfen")}
+        primary={true}
+      />
+      <ButtonLink
+        destination="kontakt"
+        label={t("navigation.kontakt")}
+        primary={true}
+      />
+    </div>
+    <LeaderDisclaimer />
+  </Content>
+</Layout>

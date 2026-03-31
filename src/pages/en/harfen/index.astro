@@ -1,0 +1,98 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Content from "../../../components/Content.astro";
+import ImageSlider from "../../../components/imageslider/ImageSlider.astro";
+import ButtonLink from "../../../components/button/ButtonLink.astro";
+import { useTranslations } from "../../../i18n/utils";
+import harfen1 from "../../../images/harfen/index/harfen-1.jpg";
+import harfen2 from "../../../images/harfen/index/harfen-2.jpg";
+import harfen3 from "../../../images/harfen/index/harfen-3.jpg";
+import harfen4 from "../../../images/harfen/index/harfen-4.jpg";
+import harfen5 from "../../../images/harfen/index/harfen-5.jpg";
+import harfen6 from "../../../images/harfen/index/harfen-6.jpg";
+import harfen7 from "../../../images/harfen/index/harfen-7.jpg";
+import harfen8 from "../../../images/harfen/index/harfen-8.jpg";
+import harfen9 from "../../../images/harfen/index/harfen-9.jpg";
+import harfen10 from "../../../images/harfen/index/harfen-10.jpg";
+
+const t = useTranslations("en");
+const images = [
+  { src: harfen1, alt: "" },
+  { src: harfen2, alt: "" },
+  { src: harfen3, alt: "" },
+  { src: harfen4, alt: "" },
+  { src: harfen5, alt: "" },
+  { src: harfen6, alt: "" },
+  { src: harfen7, alt: "" },
+  { src: harfen8, alt: "" },
+  { src: harfen9, alt: "" },
+  { src: harfen10, alt: "" },
+];
+---
+
+<Layout
+  title={t("harfen.meta.title")}
+  description={t("harfen.meta.content")}
+  lang="en"
+  canonicalPath="/en/harfen"
+>
+  <Content
+    flow="col"
+    headline={t("harfen.headline")}
+    className="lg:grid-flow-col"
+  >
+    <div class="lg:pl-20 md:w-7/12 lg:w-9/12">
+      <p class="mb-5 w-11/12" set:html={t("harfen.text")} />
+      <div class="grid grid-flow-col gap-x-2 place-items-start w-10/12">
+        <ButtonLink
+          destination="harfen/fiona"
+          label="Fiona"
+          labelSecondary={t("harfen.fiona")}
+          primary={true}
+          doublespace={true}
+        />
+        <ButtonLink
+          destination="harfen/wyda"
+          label="Wyda"
+          labelSecondary={t("harfen.wyda")}
+          primary={true}
+          doublespace={true}
+        />
+        <ButtonLink
+          destination="harfen/isabeau"
+          label="Isabeau"
+          labelSecondary={t("harfen.isabeau")}
+          primary={true}
+          doublespace={true}
+        />
+      </div>
+    </div>
+    <div class="mr-0 lg:mr-10">
+      <ImageSlider images={images} id="harfen-slider-en" />
+    </div>
+  </Content>
+</Layout>
+<script>
+  import Splide from "@splidejs/splide";
+
+  const list = document.querySelector("#harfen-slider-en .splide__list");
+  if (list) {
+    const slides = Array.from(list.children);
+    for (let i = slides.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      if (i !== j) {
+        const temp = slides[i];
+        slides[i] = slides[j];
+        slides[j] = temp;
+      }
+    }
+    slides.forEach(slide => list.appendChild(slide));
+  }
+  new Splide("#harfen-slider-en", {
+    arrows: true,
+    pagination: true,
+    lazyLoad: "nearby",
+    autoplay: false,
+    rewind: true,
+  }).mount();
+</script>

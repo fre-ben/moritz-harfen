@@ -1,0 +1,139 @@
+---
+import Logo from "./navbar/Logo.astro";
+import NavLink from "./navbar/NavLink.astro";
+import NavLinkDropdown from "./navbar/NavLinkDropdown.astro";
+import { getLangFromUrl, localizedUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<nav
+  class="inline-flex items-center sticky top-0 pt-10 lg:pl-10 md:pl-0 z-50 bg-background w-full justify-start"
+>
+  <!-- Mobile -->
+  <div class="visible lg:hidden w-full grid grid-flow-col items-center">
+    <Logo />
+    <button id="mobile-menu-toggle" class="justify-self-end" aria-label="Menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          id="burger-open-icon"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+        <path
+          id="burger-close-icon"
+          class="hidden"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Desktop -->
+  <div
+    class="hidden w-full lg:grid grid-flow-col items-center justify-items-center"
+  >
+    <Logo mr="10" size="4" />
+    <NavLinkDropdown
+      label={t("navigation.harfen")}
+      href={localizedUrl(lang, "/harfen")}
+      fiona={t("navigation.fiona")}
+      wyda={t("navigation.wyda")}
+      isabeau={t("navigation.isabeau")}
+    />
+    <NavLink
+      href={localizedUrl(lang, "/leihharfen")}
+      label={t("navigation.leihharfen")}
+    />
+    <NavLink
+      href={localizedUrl(lang, "/zubehoer")}
+      label={t("navigation.zubehör")}
+    />
+    <NavLink
+      href={localizedUrl(lang, "/werkstatt")}
+      label={t("navigation.werkstatt")}
+    />
+    <NavLink
+      href={localizedUrl(lang, "/kontakt")}
+      label={t("navigation.kontakt")}
+    />
+  </div>
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="absolute right-0 top-full justify-items-end w-full pt-6 pb-24 bg-background grid grid-flow-row gap-y-4 max-h-screen overflow-scroll overflow-x-hidden z-40 opacity-0 pointer-events-none transition-opacity ease-out duration-50"
+  >
+    <a
+      href={localizedUrl(lang, "/harfen")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >{t("navigation.harfen")}</a
+    >
+    <a
+      href={localizedUrl(lang, "/harfen/fiona")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >fiona</a
+    >
+    <a
+      href={localizedUrl(lang, "/harfen/wyda")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >wyda</a
+    >
+    <a
+      href={localizedUrl(lang, "/harfen/isabeau")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >isabeau</a
+    >
+    <a
+      href={localizedUrl(lang, "/leihharfen")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >{t("navigation.leihharfen")}</a
+    >
+    <a
+      href={localizedUrl(lang, "/zubehoer")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >{t("navigation.zubehör")}</a
+    >
+    <a
+      href={localizedUrl(lang, "/werkstatt")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >{t("navigation.werkstatt")}</a
+    >
+    <a
+      href={localizedUrl(lang, "/kontakt")}
+      class="mr-5 inline text-lg border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      >{t("navigation.kontakt")}</a
+    >
+  </div>
+</nav>
+
+<script>
+  const toggle = document.querySelector("#mobile-menu-toggle");
+  const menu = document.querySelector("#mobile-menu");
+  const openIcon = document.querySelector("#burger-open-icon");
+  const closeIcon = document.querySelector("#burger-close-icon");
+  let menuOpen = false;
+  toggle?.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+    if (!menu || !openIcon || !closeIcon) return;
+    if (menuOpen) {
+      menu.classList.remove("opacity-0", "pointer-events-none");
+      menu.classList.add("opacity-100");
+      openIcon.classList.add("hidden");
+      closeIcon.classList.remove("hidden");
+    } else {
+      menu.classList.add("opacity-0", "pointer-events-none");
+      menu.classList.remove("opacity-100");
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    }
+  });
+</script>

@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="404: Not Found"
+  description="Seite nicht gefunden"
+  lang="de"
+  canonicalPath="/404"
+  langOverride={{ de: "/404", en: "/en/404/" }}
+>
+  <div class="mt-20 text-center">
+    <h1 class="text-4xl font-light">404</h1>
+    <p class="mt-4 text-lg font-light">Diese Seite existiert nicht.</p>
+    <a href="/" class="mt-6 inline-block text-highlight hover:underline"
+      >Zurück zur Startseite</a
+    >
+  </div>
+</Layout>
