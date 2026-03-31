@@ -1,0 +1,22 @@
+---
+import { localizedUrl, useTranslations } from "../i18n/utils";
+
+interface Props {
+  lang: "de" | "en";
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="grid place-items-center mt-20 mb-5">
+  <p class="border-t border-moritzGrey px-5 md:px-20 pt-1 font-light text-sm">
+    © {year} | Moritz Dortmund |{" "}
+    <a
+      class="border-b-2 border-opacity-0 border-highlight hover:border-opacity-100 transition ease-in-out duration-300"
+      href={localizedUrl(lang, "/kontakt")}
+    >
+      {t("impressum")}
+    </a>
+  </p>
+</footer>

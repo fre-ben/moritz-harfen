@@ -1,0 +1,20 @@
+---
+interface Props {
+  mr?: string;
+  size?: string;
+  className?: string;
+}
+const { mr = "10", size = "", className = "" } = Astro.props;
+---
+
+<a
+  href="/"
+  class:list={[
+    `md:text-4xl md:ml-0 lg:ml-0 whitespace-nowrap`,
+    `text-${size}xl`,
+    mr ? `sm:mr-${mr}` : "",
+    className,
+  ]}
+>
+  moritz harfen
+</a>

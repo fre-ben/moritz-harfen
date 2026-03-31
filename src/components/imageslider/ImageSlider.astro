@@ -1,0 +1,116 @@
+---
+import "@splidejs/splide/css";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  images: Array<{ src: ImageMetadata; alt: string }>;
+  id: string;
+}
+const { images, id } = Astro.props;
+---
+
+<div class="slider-wrapper relative" data-slider-id={id}>
+  <div class={`splide`} id={id}>
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          images.map(img => (
+            <li class="splide__slide">
+              <img src={img.src.src} alt={img.alt} loading="lazy" />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <button
+    class="fullscreen-btn absolute bottom-2 right-2 z-10 p-1 bg-transparent border-none cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-200"
+    aria-label="Fullscreen"
+    data-fullscreen-for={id}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      width="24"
+      height="24"
+    >
+      <path
+        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<style is:global>
+  .splide__pagination__page.is-active,
+  .splide__pagination__page:hover {
+    background: #ff4d2f;
+  }
+  .splide__arrow:hover svg {
+    fill: #ff4d2f;
+  }
+  .splide__arrow svg {
+    height: 70px;
+  }
+  .splide__slide img {
+    width: 577px;
+    height: 400px;
+    object-fit: contain;
+  }
+
+  /* Fullscreen mode */
+  .slider-wrapper:fullscreen {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-wrapper:fullscreen .splide {
+    width: 100%;
+    height: 100%;
+  }
+  .slider-wrapper:fullscreen .splide__slide img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
+  .slider-wrapper:fullscreen .fullscreen-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+  }
+</style>
+
+<script>
+  function handleFullscreenKeys(e: KeyboardEvent) {
+    const wrapper = document.fullscreenElement as HTMLElement | null;
+    if (!wrapper?.classList.contains("slider-wrapper")) return;
+    if (e.key === "ArrowLeft") {
+      wrapper.querySelector<HTMLButtonElement>(".splide__arrow--prev")?.click();
+    } else if (e.key === "ArrowRight") {
+      wrapper.querySelector<HTMLButtonElement>(".splide__arrow--next")?.click();
+    }
+  }
+
+  document.addEventListener("keydown", handleFullscreenKeys);
+
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-fullscreen-for]")
+    .forEach(btn => {
+      const wrapper = btn.closest(".slider-wrapper") as HTMLElement | null;
+      if (!wrapper) return;
+      btn.addEventListener("click", () => {
+        if (document.fullscreenElement) {
+          document.exitFullscreen();
+        } else {
+          wrapper.requestFullscreen();
+        }
+      });
+    });
+</script>

@@ -1,0 +1,22 @@
+---
+interface Props {
+  href: string;
+  label: string;
+}
+const { href, label } = Astro.props;
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const linkPath = href.replace(/\/$/, "") || "/";
+const isActive = pathname === linkPath;
+---
+
+<a
+  href={href}
+  class:list={[
+    "inline text-lg md:ml-2 lg:ml-7 border-b-2 border-highlight transition ease-in-out duration-300",
+    isActive
+      ? "border-opacity-100"
+      : "border-opacity-0 hover:border-opacity-100",
+  ]}
+>
+  {label}
+</a>

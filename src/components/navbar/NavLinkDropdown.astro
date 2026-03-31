@@ -1,0 +1,53 @@
+---
+interface Props {
+  label: string;
+  href: string;
+  fiona: string;
+  wyda: string;
+  isabeau: string;
+}
+const { label, href, fiona, wyda, isabeau } = Astro.props;
+const base = href;
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isActive = (path: string) => pathname === path.replace(/\/$/, "");
+---
+
+<div class="group relative inline-block">
+  <a href={href} class="inline text-xl md:ml-2 lg:ml-7">
+    {label}
+  </a>
+  <div
+    class="invisible absolute left-0 top-full z-20 whitespace-nowrap bg-background md:ml-2 lg:ml-7 pb-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100"
+  >
+    <p
+      class:list={[
+        "text-lg mx-2 border-b-2 border-highlight cursor-pointer transition ease-in-out duration-300",
+        isActive(`${base}/fiona`)
+          ? "border-opacity-100"
+          : "border-opacity-0 hover:border-opacity-100",
+      ]}
+    >
+      <a href={`${base}/fiona`}>{fiona}</a>
+    </p>
+    <p
+      class:list={[
+        "text-lg mx-2 border-b-2 border-highlight cursor-pointer transition ease-in-out duration-300",
+        isActive(`${base}/wyda`)
+          ? "border-opacity-100"
+          : "border-opacity-0 hover:border-opacity-100",
+      ]}
+    >
+      <a href={`${base}/wyda`}>{wyda}</a>
+    </p>
+    <p
+      class:list={[
+        "text-lg mx-2 border-b-2 border-highlight cursor-pointer transition ease-in-out duration-300",
+        isActive(`${base}/isabeau`)
+          ? "border-opacity-100"
+          : "border-opacity-0 hover:border-opacity-100",
+      ]}
+    >
+      <a href={`${base}/isabeau`}>{isabeau}</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+---
+import { localizedUrl, getLangFromUrl } from "../../i18n/utils";
+
+interface Props {
+  destination: string;
+  label: string;
+  primary?: boolean;
+  doublespace?: boolean;
+  labelSecondary?: string;
+}
+const {
+  destination,
+  label,
+  primary = false,
+  doublespace = false,
+  labelSecondary,
+} = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const href = localizedUrl(lang, `/${destination}`);
+const styleClass = primary
+  ? "border-4 rounded-lg border-opacity-60 px-4 py-1 transition ease-in-out duration-300 border-highlight hover:border-opacity-100 focus:border-opacity-100"
+  : "border-4 rounded-lg border-opacity-60 px-4 py-1 transition ease-in-out duration-300 border-black bg-black text-white bg-opacity-70 hover:bg-opacity-100 focus:bg-opacity-100";
+---
+
+<a href={href} class={styleClass}>
+  <span>{label}</span>
+  {doublespace && <p>{labelSecondary}</p>}
+</a>

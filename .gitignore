@@ -54,9 +54,9 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
+# build output
 .cache/
-public
+dist/
 
 # Mac files
 .DS_Store
@@ -68,8 +68,5 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Misc
-SliderTemplate.psd
-
-#Markdown
-changes-220317.md
+# OpenCode
+.sisyphus

@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Content from "../components/Content.astro";
+import ImageSlider from "../components/imageslider/ImageSlider.astro";
+import { useTranslations } from "../i18n/utils";
+import saitenImg from "../images/zubehoer/Saiten.jpg";
+import schluesselImg from "../images/zubehoer/Stimmschluessel.jpg";
+import taschenImg from "../images/zubehoer/Taschen.jpg";
+
+const t = useTranslations("de");
+const images = [
+  { src: saitenImg, alt: "" },
+  { src: schluesselImg, alt: "" },
+  { src: taschenImg, alt: "" },
+];
+---
+
+<Layout
+  title={t("zubehör.meta.title")}
+  description={t("zubehör.meta.content")}
+  lang="de"
+  canonicalPath="/zubehoer"
+>
+  <Content
+    flow="col"
+    headline={t("zubehör.headline")}
+    className="lg:grid-flow-col"
+  >
+    <div class="lg:pl-20 sm:pl-0">
+      <ImageSlider images={images} id="zubehoer-slider" />
+    </div>
+    <div class="md:w-11/12 lg:w-10/12">
+      <p class="mb-5 w-11/12 text-lg">{t("zubehör.text")}</p>
+      <p class="mb-5 w-11/12 text-lg">
+        <span set:html={t("zubehör.bestellung")} />
+        <span
+          >(<a
+            href="mailto:moritz-harfen@posteo.de"
+            class="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
+            >moritz-harfen@posteo.de</a
+          >).</span
+        >
+      </p>
+    </div>
+  </Content>
+</Layout>
+<script>
+  import Splide from "@splidejs/splide";
+
+  new Splide("#zubehoer-slider", {
+    arrows: true,
+    pagination: true,
+    lazyLoad: "nearby",
+    autoplay: false,
+    rewind: true,
+  }).mount();
+</script>

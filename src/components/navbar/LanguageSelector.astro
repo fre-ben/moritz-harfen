@@ -1,0 +1,20 @@
+---
+import type { Lang } from "../../i18n/utils";
+
+interface Props {
+  currentLang: Lang;
+  langOverride?: { de: string; en: string };
+}
+const { currentLang, langOverride } = Astro.props;
+const path = Astro.url.pathname;
+const dePath =
+  langOverride?.de ??
+  (path.startsWith("/en") ? path.replace(/^\/en/, "") || "/" : path);
+const enPath = langOverride?.en ?? (dePath === "/" ? "/en/" : `/en${dePath}`);
+---
+
+<div class="inline text-right whitespace-nowrap lg:mr-3 mt-5">
+  <a href={dePath} class={currentLang === "de" ? "font-bold" : ""}>deutsch</a>
+  {" | "}
+  <a href={enPath} class={currentLang === "en" ? "font-bold" : ""}>english</a>
+</div>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import LanguageSelector from "../components/navbar/LanguageSelector.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  lang: "de" | "en";
+  canonicalPath: string;
+  langOverride?: { de: string; en: string };
+}
+
+const { title, description, lang, canonicalPath, langOverride } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang={lang}
+  canonicalPath={canonicalPath}
+>
+  <div
+    class="grid auto-rows-min px-5 md:px-10 lg:px-5 min-h-screen min-w-min bg-background"
+  >
+    <LanguageSelector currentLang={lang} langOverride={langOverride} />
+    <Navbar />
+    <slot />
+    <Footer lang={lang} />
+  </div>
+</BaseLayout>

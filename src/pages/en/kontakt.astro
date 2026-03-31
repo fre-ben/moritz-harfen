@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Content from "../../components/Content.astro";
+import Legal from "../../components/Legal.astro";
+import { useTranslations } from "../../i18n/utils";
+
+const t = useTranslations("en");
+---
+
+<Layout
+  title={t("kontakt.meta.title")}
+  description={t("kontakt.meta.content")}
+  lang="en"
+  canonicalPath="/en/kontakt"
+>
+  <Content flow="row" headline={t("kontakt.headline")}>
+    <div class="lg:pl-20 md:w-7/12 lg:w-9/12">
+      <div class="grid grid-flow-row md:grid-flow-col md:gap-x-20">
+        <div class="grid mb-5 md:mb-0 whitespace-nowrap justify-start">
+          <div class="grid grid-flow-col">
+            <p>
+              Harfenbau<br />
+              Moritz Dortmund<br />
+            </p>
+          </div>
+          Birkenstraße 5<br />
+          36166 Haunetal - Kruspis
+        </div>
+        <p class="whitespace-nowrap">
+          {t("kontakt.telefon")}: 06673 918 919<br />
+          E-Mail:{" "}
+          <a
+            href="mailto:moritz-harfen@posteo.de"
+            class="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
+          >
+            moritz-harfen@posteo.de
+          </a><br />
+          USt-ID: DE341449842
+        </p>
+      </div>
+      <p class="mt-5">{t("kontakt.termine")}</p>
+      <div class="mt-5">
+        <h3 class="text-lg font-bold">{t("kontakt.anfahrt_hl")}</h3>
+        <p set:html={t("kontakt.anfahrt_text")} />
+      </div>
+      <div class="w-40 mt-10 pt-10 border-t-2 border-highlight"></div>
+      <Legal />
+      <p class="mt-10 text-sm text-center">
+        {t("kontakt.webseite")}
+        {" "}
+        <a
+          href="https://github.com/fre-ben"
+          target="_blank"
+          rel="noreferrer"
+          class="text-highlight text-opacity-80 hover:text-opacity-100 transition-all"
+        >
+          fre-ben
+        </a>
+      </p>
+    </div>
+  </Content>
+</Layout>

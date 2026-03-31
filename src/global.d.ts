@@ -1,8 +1,19 @@
 declare module "*.jpg" {
-  const value: string;
-  export = value;
+  import type { ImageMetadata } from "astro";
+  const value: ImageMetadata;
+  export default value;
 }
-declare module "*.svg" {
-  const value: string;
-  export = value;
+
+declare module "*.jpeg" {
+  import type { ImageMetadata } from "astro";
+  const value: ImageMetadata;
+  export default value;
 }
+
+declare module "*.png" {
+  import type { ImageMetadata } from "astro";
+  const value: ImageMetadata;
+  export default value;
+}
+
+declare module "@splidejs/splide/css";

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins ExtraLight"),
+    local("Poppins-ExtraLight"),
+    url("/fonts/Poppins-ExtraLight.woff2") format("woff2"),
+    url("/fonts/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Medium"),
+    local("Poppins-Medium"),
+    url("/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Light Italic"),
+    local("Poppins-LightItalic"),
+    url("/fonts/Poppins-LightItalic.woff2") format("woff2"),
+    url("/fonts/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins ExtraLight Italic"),
+    local("Poppins-ExtraLightItalic"),
+    url("/fonts/Poppins-ExtraLightItalic.woff2") format("woff2"),
+    url("/fonts/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Regular"),
+    local("Poppins-Regular"),
+    url("/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Black"),
+    local("Poppins-Black"),
+    url("/fonts/Poppins-Black.woff2") format("woff2"),
+    url("/fonts/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Light"),
+    local("Poppins-Light"),
+    url("/fonts/Poppins-Light.woff2") format("woff2"),
+    url("/fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Bold"),
+    local("Poppins-Bold"),
+    url("/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("Poppins Italic"),
+    local("Poppins-Italic"),
+    url("/fonts/Poppins-Italic.woff2") format("woff2"),
+    url("/fonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind at-rule */
+@tailwind base;
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind at-rule */
+@tailwind components;
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind at-rule */
+@tailwind utilities;

@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Content from "../../components/Content.astro";
+import ImageSlider from "../../components/imageslider/ImageSlider.astro";
+import ButtonLink from "../../components/button/ButtonLink.astro";
+import { useTranslations } from "../../i18n/utils";
+import leihharfenImg from "../../images/harfen/leihharfen.jpg";
+
+const t = useTranslations("en");
+const images = [{ src: leihharfenImg, alt: "" }];
+---
+
+<Layout
+  title={t("leihharfen.meta.title")}
+  description={t("leihharfen.meta.content")}
+  lang="en"
+  canonicalPath="/en/leihharfen"
+>
+  <Content flow="col" headline={t("leihharfen.headline")}>
+    <div class="lg:pl-20 md:w-11/12 lg:w-10/12 order-2 lg:order-1">
+      <p class="mb-5 w-11/12" set:html={t("leihharfen.leihen")} />
+      <p class="mb-10">{t("leihharfen.anfragen")}</p>
+      <ButtonLink
+        destination="kontakt"
+        label={t("leihharfen.kontakt")}
+        primary={true}
+      />
+    </div>
+    <div class="lg:pr-20 sm:pl-0 order-1 lg:order-2">
+      <ImageSlider images={images} id="leihharfen-slider-en" />
+    </div>
+  </Content>
+</Layout>
+<script>
+  import Splide from "@splidejs/splide";
+
+  new Splide("#leihharfen-slider-en", {
+    arrows: true,
+    pagination: true,
+    lazyLoad: "nearby",
+    autoplay: false,
+    rewind: true,
+  }).mount();
+</script>
