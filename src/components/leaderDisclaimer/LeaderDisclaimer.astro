@@ -2,9 +2,7 @@
 import { Image } from "astro:assets";
 import { useTranslations, getLangFromUrl } from "../../i18n/utils";
 import euImg from "../../images/leader/EU.jpg";
-import eplrImg from "../../images/leader/EPLR.jpg";
 import hessenImg from "../../images/leader/Hessen.png";
-import leaderImg from "../../images/leader/LEADER.jpg";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -37,32 +35,5 @@ const t = useTranslations(lang);
       />
     </a>
     <p set:html={t("leaderDisclaimer.hessen")} />
-  </div>
-  <div
-    class="grid grid-flow-col gap-x-5 items-center justify-start sm:justify-center"
-  >
-    <a
-      target="_blank"
-      rel="noreferrer"
-      href="https://umwelt.hessen.de/landwirtschaft/laendlicher-raum/foerderung-der-laendlichen-entwicklung/regionalentwicklung"
-      class="justify-self-start sm:justify-self-center lg:justify-self-end"
-    >
-      <Image
-        src={leaderImg}
-        alt="Logo Leader"
-        width={70}
-        height={70}
-        quality={100}
-      />
-    </a>
-    <a target="_blank" rel="noreferrer" href="http://eler.hessen.de">
-      <Image
-        src={eplrImg}
-        alt="Logo EPLR"
-        width={62}
-        height={69}
-        quality={100}
-      />
-    </a>
   </div>
 </section>
