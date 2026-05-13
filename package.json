@@ -6,7 +6,7 @@
   "author": "Frederik Schocke",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
-    "astro": "^6.1.2",
+    "astro": "^6.1.10",
     "dotenv": "^8.5.1"
   },
   "devDependencies": {
